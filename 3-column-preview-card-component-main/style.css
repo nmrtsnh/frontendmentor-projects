@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+main {
+  min-height: 100vh;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.container {
+}
+
+.logo {
+}
+
+.heading {
+}
+
+.text {
+}
+
+.btn {
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
