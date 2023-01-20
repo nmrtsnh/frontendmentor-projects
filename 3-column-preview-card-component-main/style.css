@@ -12,20 +12,23 @@ body {
 }
 main {
   min-height: 100vh;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
+
   display: flex;
   flex-direction: row;
   width: 100%;
 
   align-items: center;
   justify-content: center;
-  /* margin: auto; */
+}
+
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .container {
-  /* display: flex;
-  flex-direction: column; */
   max-width: 290px;
   height: 460px;
   padding: 40px;
@@ -71,6 +74,13 @@ main {
   border-bottom-left-radius: 10px;
 }
 
+@media (max-width: 800px) {
+  .sedan {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+
 .sedan button {
   color: hsl(31, 77%, 52%);
 }
@@ -97,6 +107,13 @@ main {
   background-color: hsl(179, 100%, 13%);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .luxury button {
