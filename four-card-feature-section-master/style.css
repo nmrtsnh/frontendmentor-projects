@@ -9,6 +9,9 @@ body {
   font-size: 15px;
 }
 
+section {
+  margin-bottom: 50px;
+}
 header {
   text-align: center;
   margin-top: 4.5rem;
@@ -28,46 +31,79 @@ header span {
 .heading-text {
   margin-right: 475px;
   margin-left: 475px;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   color: hsl(229, 6%, 66%);
 }
 
 main {
-  background-color: aliceblue;
+  /* background-color: hsl(228, 45%, 44%); */
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   row-gap: 2rem;
   column-gap: 1rem;
   justify-items: center;
 }
 .container {
+  /* border: ridge; */
+  border-radius: 5px;
+  /* box-shadow: hsl(0, 0%, 98%) 0px 7px 29px 0px; */
+  box-shadow: 0px 14px 20px -5px rgb(218 228 240);
+  max-width: 330px;
+  height: 250px;
+  position: relative;
 }
 .container-1 {
-  /* background-color: brown; */
   grid-row: 2/4;
-  border-top-color: red;
-  border-style: solid;
-  border-top-width: 20px;
+  border-top: 4px solid hsl(180, 62%, 55%);
+  /* top / right / bottom / left */
+  padding: 30px 20px 20px 20px;
+  margin-right: -300px;
 }
 
 .container-2 {
-  background-color: blueviolet;
   grid-row: 1/3;
+  border-top: 5px solid hsl(0, 78%, 62%);
+
+  padding: 30px 20px 20px 20px;
 }
 
 .container-3 {
-  background-color: bisque;
   grid-row: 3/5;
+  border-top: 4px solid hsl(34, 97%, 64%);
+  padding: 30px 20px 20px 20px;
 }
 
 .container-4 {
-  background-color: aqua;
   grid-row: 2/4;
+  border-top: 4px solid hsl(212, 86%, 64%);
+  padding: 30px 20px 20px 20px;
+  margin-left: -300px;
+}
+
+.container-heading {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.container-text {
+  font-size: 12px;
+  margin-right: 60px;
+  color: hsl(229, 6%, 66%);
+}
+
+.container-img {
+  position: absolute;
+  right: 0;
+  /* left: 0; */
+  bottom: 0;
+  padding: 0 30px 30px 30px;
+  /* float: inline-start; */
 }
 
 .attribution {
   font-size: 11px;
+
   text-align: center;
 }
 .attribution a {
