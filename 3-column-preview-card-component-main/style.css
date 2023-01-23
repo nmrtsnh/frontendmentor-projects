@@ -109,13 +109,6 @@ main {
   border-bottom-right-radius: 10px;
 }
 
-@media (max-width: 800px) {
-  .luxury {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-  }
-}
-
 .luxury button {
   color: hsl(179, 100%, 13%);
 }
