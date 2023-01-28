@@ -6,10 +6,6 @@
   color: hsl(228, 45%, 44%);
 }
 
-.footer {
-  background-color: brown;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -124,7 +120,13 @@ body {
 
 .section-top {
   margin-bottom: -10px;
-  padding-left: -20px;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.section-bottom {
+  margin-bottom: 5rem;
+  width: 100%;
 }
 
 .feature-display {
@@ -133,7 +135,8 @@ body {
   align-items: center;
   gap: 150px;
 }
-.feature-1 {
+
+.feature {
   background-color: hsl(207, 100%, 98%);
 }
 
@@ -164,4 +167,116 @@ body {
 .feature-2 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: hsl(192, 100%, 9%);
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+.bg-footer {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.col-address {
+  text-align: left;
+  margin-left: 5rem;
+}
+
+.logo {
+  width: 60%;
+  padding-bottom: 1rem;
+  filter: brightness(1000%) saturate(0) contrast(1000%) invert(0);
+}
+
+.text-footer {
+  width: 350px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(207, 100%, 98%);
+  padding-bottom: 1.5rem;
+}
+.phone {
+  color: hsl(207, 100%, 98%);
+  padding-bottom: 1.5rem;
+}
+
+.icon-phone {
+  margin-right: 1rem;
+}
+.email {
+  color: hsl(207, 100%, 98%);
+  text-decoration: none;
+}
+
+.icon-mail {
+  margin-right: 1rem;
+}
+
+.newsletter {
+  text-align: left;
+  margin-right: 15rem;
+}
+
+.heading-newsletter {
+  color: hsl(207, 100%, 98%);
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.text-newsletter {
+  width: 380px;
+  font-size: 1rem;
+
+  color: hsl(207, 100%, 98%);
+  padding-bottom: 1.5rem;
+  font-weight: 400;
+  margin-right: 10rem;
+  line-height: 1.8;
+}
+
+.form {
+  display: flex;
+}
+
+.input {
+  margin-right: 1rem;
+}
+.form-email {
+  width: 100%;
+  padding: 12px 100px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.subscribe-button {
+  width: 100%;
+  padding: 11px 32px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border-style: none;
+  align-items: center;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(207, 100%, 98%);
+  font-size: 1rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: white;
 }
