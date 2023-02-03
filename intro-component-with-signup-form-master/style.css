@@ -121,9 +121,14 @@ main {
   width: 100%;
   height: 3em;
   text-align: left;
-  border: 2px solid red;
+
+  font-weight: bolder;
 }
 
+.signup-form input:not([type="submit"]) {
+  border: 1px solid #e4e2e2;
+  border-radius: 4px;
+}
 .error-msg {
   color: hsl(0, 100%, 74%);
   font-size: 12px;
@@ -147,7 +152,7 @@ main {
 }
 
 .terms span {
-  color: red;
+  color: #ff7a7a;
   font-weight: bold;
 }
 
