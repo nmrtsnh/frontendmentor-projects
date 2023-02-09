@@ -1,0 +1,33 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.nav-header {
+  display: flex;
+}
+
+.header-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-details ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-details ul li a {
+  text-decoration: none;
+  gap: 20px;
+}
+
+.header-box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
