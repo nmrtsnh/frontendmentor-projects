@@ -69,3 +69,7 @@ header {
 .avatar-box img {
   width: 50%;
 }
+
+.product-image img {
+  width: 30%;
+}
