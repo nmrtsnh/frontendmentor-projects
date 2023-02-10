@@ -6,14 +6,41 @@
   color: hsl(228, 45%, 44%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  padding: 0 8rem;
+}
+
 .nav-header {
   display: flex;
+  justify-content: space-between;
+
+  border-bottom: 2px solid hsl(223, 64%, 98%);
+  width: 100%;
+  height: 100%;
 }
 
 .header-box-1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header-logo {
+  padding-right: 5rem;
 }
 
 .header-details ul {
@@ -23,11 +50,22 @@
 
 .header-details ul li a {
   text-decoration: none;
-  gap: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+  color: hsl(0, 0%, 0%);
 }
 
 .header-box-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+.header-cart {
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.avatar-box img {
+  width: 50%;
 }
