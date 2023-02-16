@@ -102,6 +102,7 @@ main {
   color: hsl(0, 0%, 100%);
 }
 .steps-container {
+  position: relative;
 }
 
 .primary-heading {
@@ -143,4 +144,23 @@ main {
   font-weight: 500;
   font-size: 16px;
   /* display: none; */
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.next-button {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
 }
