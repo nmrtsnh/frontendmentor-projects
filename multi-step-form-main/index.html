@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -19,44 +24,47 @@
   <body>
     <main>
       <div class="container">
+        <!-- SIDEBAR -->
         <div class="sidebar-container">
           <div class="step">
-            <div class="number">1</div>
+            <div class="step-number active">1</div>
             <div class="text">
-              <p>Step 1</p>
-              <p>Your info</p>
+              <p class="title">Step 1</p>
+              <p class="subtitle">Your info</p>
             </div>
           </div>
           <div class="step">
-            <div class="number">2</div>
+            <div class="step-number">2</div>
             <div class="text">
-              <p>Step 2</p>
-              <p>Select Plan</p>
+              <p class="title">Step 2</p>
+              <p class="subtitle">Select Plan</p>
             </div>
           </div>
           <div class="step">
-            <div class="number">3</div>
+            <div class="step-number">3</div>
             <div class="text">
-              <p>Step 3</p>
-              <p>Add-onso</p>
+              <p class="title">Step 3</p>
+              <p class="subtitle">Add-ons</p>
             </div>
           </div>
           <div class="step">
-            <div class="number">4</div>
+            <div class="step-number">4</div>
             <div class="text">
-              <p>Step 4</p>
-              <p>Summary</p>
+              <p class="title">Step 4</p>
+              <p class="subtitle">Summary</p>
             </div>
           </div>
         </div>
+
         <div class="steps-container">
-          <div class="personal-info">
-            <h1 class="primary-heading">Personal Info</h1>
-            <span class="primary-text"
-              >Please provide your name, email address, and phone number.</span
-            >
+          <!-- STEP 1-->
+          <div class="personal-info" id="step-1">
+            <h3 class="primary-heading">Personal Info</h3>
+            <p class="primary-text">
+              Please provide your name, email address, and phone number.
+            </p>
             <form class="form-info">
-              <div>
+              <div class="form-details">
                 <label for="fname">Name</label>
                 <span class="error-msg">Enter your name</span>
               </div>
@@ -67,7 +75,7 @@
                 name="fname"
                 placeholder="e.g.Stephen King"
               />
-              <div>
+              <div class="form-details">
                 <label for="email">Email Address</label>
                 <span class="error-msg">Enter your email</span>
               </div>
@@ -79,7 +87,7 @@
                 placeholder="e.g.Stephenking@lorem.com"
               />
 
-              <div>
+              <div class="form-details">
                 <label for="number">Phone Number</label>
                 <span class="error-msg"> Enter your mobile number </span>
               </div>
@@ -92,85 +100,156 @@
               />
             </form>
           </div>
-          <div class="plan-details">
-            <h1 class="primary-heading">Select your plan</h1>
-            <span class="primary-text"
-              >You have the option of monthly or yearly billing.</span
-            >
+
+          <!-- STEP 2-->
+          <!-- <div class="plan-details" id="step-2">
+            <h3 class="primary-heading">Select your plan</h3>
+            <p class="primary-text">
+              You have the option of monthly or yearly billing.
+            </p>
             <div class="pricing-details">
               <div class="pricing-card">
                 <div class="card-icon">
                   <img src="assets/images/icon-arcade.svg" />
                 </div>
-                <p class="card-name">Arcade</p>
-                <p class="card-price">$9/mo</p>
+                <div class="plan-price">
+                  <p class="card-name">Arcade</p>
+                  <p class="card-price">
+                    $<span class="subscription-price">00</span>/<span
+                      class="subscription-duration"
+                      >xx</span
+                    >
+                  </p>
+                  <p class="yearly-benefit">2 months free</p>
+                </div>
               </div>
               <div class="pricing-card">
                 <div class="card-icon">
                   <img src="assets/images/icon-advanced.svg" />
                 </div>
-                <p class="card-name">Advance</p>
-                <p class="card-price">$12/mo</p>
+                <div class="plan-price">
+                  <p class="card-name">Advance</p>
+                  <p class="card-price">
+                    $<span class="subscription-price">00</span>/<span
+                      class="subscription-duration"
+                      >xx</span
+                    >
+                  </p>
+                  <p class="yearly-benefit">2 months free</p>
+                </div>
               </div>
               <div class="pricing-card">
                 <div class="card-icon">
                   <img src="assets/images/icon-pro.svg" />
                 </div>
-                <p class="card-name">Pro</p>
-                <p class="card-price">$15/mo</p>
+                <div class="plan-price">
+                  <p class="card-name">Pro</p>
+                  <p class="card-price">
+                    $<span class="subscription-price">00</span>/<span
+                      class="subscription-duration"
+                      >xx</span
+                    >
+                  </p>
+                  <p class="yearly-benefit">2 months free</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="add-ons"></div>
-          <div class="summary"></div>
+            <p id="select-plan-error"></p>
+            <div class="toggle-container">
+              <p class="monthly-toggle">Monthly</p>
+              <div class="toggle">
+                <div class="toggle-button"></div>
+              </div>
+              <p class="yearly-toggle">Yearly</p>
+            </div>
+          </div> -->
+
+          <!-- STEP 3 -->
+          <!-- <div class="add-ons" id="step-3">
+            <h3 class="primary-heading">Pick add-ons</h3>
+            <p class="primary-text">
+              Add-ons help enhance your gaming experience.
+            </p>
+            <div class="add-ons-container">
+              <div class="add-ons-card">
+                <input type="checkbox" id="checkbox" name="checkbox" />
+                <div class="add-ons-text">
+                  <p class="add-ons-name">Online Services</p>
+                  <p class="add-on-description">Access to multiplayer games</p>
+                </div>
+                <div class="add-ons-price-details">
+                  <p class="card-price">
+                    +$<span class="subscription-price">00</span>/<span
+                      class="subscription-duration"
+                      >xx</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="add-ons-card">
+                <input type="checkbox" id="checkbox" name="checkbox" />
+                <div class="add-ons-text">
+                  <p class="add-ons-name">Larger Storage</p>
+                  <p class="add-on-description">Extra 1TB of cloud save</p>
+                </div>
+                <div class="add-ons-price-details">
+                  <p class="card-price">
+                    +$<span class="subscription-price">00</span>/<span
+                      class="subscription-duration"
+                      >xx</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="add-ons-card">
+                <input type="checkbox" id="checkbox" name="checkbox" />
+                <div class="add-ons-text">
+                  <p class="add-ons-name">Customizable Profile</p>
+                  <p class="add-on-description">Custom theme on your profile</p>
+                </div>
+                <div class="add-ons-price-details">
+                  <p class="card-price">
+                    +$<span class="subscription-price">00</span>/<span
+                      class="subscription-duration"
+                      >xx</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- STEP 4-->
+
+          <!-- <div class="summary" id="step-4">
+            <h3 class="primary-heading">Finishing up</h3>
+            <p class="primary-text">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div> -->
         </div>
       </div>
     </main>
 
-    <!-- Step 1 start -->
-    Next Step
-
-    <!-- Step 1 end -->
-
-    <!-- Step 2 start -->
-
-    Select your plan Arcade $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go
-    Back Next Step
-
-    <!-- Step 2 end -->
-
-    <!-- Step 3 start -->
-
-    Pick add-ons Add-ons help enhance your gaming experience. Online service
-    Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
-    +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
-    Step
-
-    <!-- Step 3 end -->
-
-    <!-- Step 4 start -->
-
-    Finishing up Double-check everything looks OK before confirming.
-
     <!-- Dynamically add subscription and add-on selections here -->
 
-    Total (per month/year) Go Back Confirm
+    <!-- Total (per month/year) Go Back Confirm -->
 
     <!-- Step 4 end -->
 
     <!-- Step 5 start -->
 
-    Thank you! Thanks for confirming your subscription! We hope you have fun
+    <!-- Thank you! Thanks for confirming your subscription! We hope you have fun
     using our platform. If you ever need support, please feel free to email us
-    at support@loremgaming.com.
+    at support@loremgaming.com. -->
 
     <!-- Step 5 end -->
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
