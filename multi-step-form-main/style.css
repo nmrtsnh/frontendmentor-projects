@@ -62,7 +62,7 @@ main {
   width: 100%;
   padding: 30px 20px;
 }
-.step {
+.step-sidebar {
   display: flex;
   gap: 1rem;
   padding-left: 10px;
@@ -105,6 +105,10 @@ main {
   position: relative;
 }
 
+.step-active {
+  display: inline-block;
+}
+
 .primary-heading {
   margin-top: 20px;
   margin-bottom: 5px;
@@ -124,9 +128,9 @@ main {
 
 .form-info input {
   width: 100%;
-
+  min-width: 600px;
   padding: 10px;
-  /* height: 35px; */
+
   border-radius: 5px;
   border: 2x solild hsl(231, 11%, 63%);
   font-weight: 500;
@@ -146,10 +150,122 @@ main {
   /* display: none; */
 }
 
-.button {
+.step {
+  /* display: none; */
+}
+
+.pricing-details {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  min-height: 330px;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 30px;
+
+  border: 2px solid hsl(229, 24%, 87%);
+  padding: 10px;
+  height: 180px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-icon {
+  margin-bottom: auto;
+}
+.card-icon img {
+  width: 30%;
+}
+
+.card-name {
+  font-weight: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-price {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.yearly-benefit {
+  font-size: 14px;
+}
+
+#select-plan-error {
+  color: red;
+  text-align: center;
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.toggle-container {
+  background-color: hsl(217, 100%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.monthly-toggle {
+  padding-right: 10px;
+  font-weight: 500;
+}
+.yearly-toggle {
+  padding-left: 10px;
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
   position: absolute;
-  right: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
   bottom: 0;
+  right: 0;
+  background-color: hsl(213, 96%, 18%);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  /* left: 3px; */
+  background-color: white;
+  transition: 0.4s;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .next-button {
@@ -163,4 +279,32 @@ main {
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.go-back-button {
+  color: hsl(231, 11%, 63%);
+
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.add-ons-card {
+  margin-top: 20px;
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.checkbox {
 }
