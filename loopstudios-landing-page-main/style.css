@@ -1,0 +1,116 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  min-height: 80vh;
+  margin-bottom: 6.5rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.header-logo {
+  padding-left: 10rem;
+}
+.nav-details {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding-right: 10rem;
+}
+
+.nav-details li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-heading {
+  border: 1px solid white;
+  width: 40%;
+  position: absolute;
+  top: 42%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
+.primary-heading {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* padding: 50px; */
+  font-size: 4rem;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  /* width: 10%; */
+  font-weight: 300;
+  letter-spacing: 1.4;
+  line-height: 1;
+}
+
+.section-hero {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.section-img {
+  margin-left: 10rem;
+  position: relative;
+}
+
+.section-img img {
+  width: 100%;
+}
+
+.section-content {
+  width: 600px;
+  margin-top: 10rem;
+
+  padding: 90px 80px;
+  position: absolute;
+  /* background-color: red; */
+  background-color: hsl(0, 0%, 100%);
+  margin-left: 46rem;
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 0%);
+  letter-spacing: 1.4;
+  padding-bottom: 2rem;
+}
+
+.text-secondary {
+  color: hsl(0, 0%, 55%);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.9;
+  font-weight: 300;
+}
