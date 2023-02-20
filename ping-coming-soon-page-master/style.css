@@ -54,7 +54,10 @@ body {
 }
 
 .notify-btn {
-  padding: 15px 65px;
+  max-width: 100%;
+  width: 180px;
+  height: 60px;
+
   background-color: hsl(223, 87%, 63%);
   border: none;
   color: white;
@@ -64,7 +67,10 @@ body {
 }
 
 .email-input {
-  padding: 15px 150px;
+  max-width: 100%;
+  width: 500px;
+  height: 60px;
+
   border-radius: 50px;
   border: 1px solid hsl(0, 0%, 59%);
   font-size: 1.2rem;
