@@ -5,3 +5,82 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+
+.header-logo {
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+.primary-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+
+  margin-bottom: 20px;
+}
+
+.primary-heading span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+.primary-text {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  color: hsl(209, 33%, 12%);
+}
+
+.container {
+  margin-bottom: 4rem;
+}
+
+.notify-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.notify-btn {
+  padding: 15px 65px;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.email-input {
+  padding: 15px 150px;
+  border-radius: 50px;
+  border: 1px solid hsl(0, 0%, 59%);
+  font-size: 1.2rem;
+  padding-left: 30px;
+  color: hsl(0, 0%, 59%);
+  line-height: 1.2;
+}
+.error-msg {
+  margin-top: 10px;
+  color: hsl(354, 100%, 66%);
+  font-size: 18px;
+
+  margin-right: 350px;
+  font-style: italic;
+}
+
+.container-img img {
+  width: 50%;
+}
