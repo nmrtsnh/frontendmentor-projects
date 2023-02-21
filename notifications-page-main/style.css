@@ -106,3 +106,13 @@ body {
   color: hsl(219, 14%, 63%);
   font-size: 14px;
 }
+
+.noti-msg {
+  margin-top: 20px;
+  display: block;
+  border: 1px solid hsl(219, 14%, 63%);
+  padding: 1.25rem;
+  text-decoration: none;
+  color: hsl(219, 12%, 42%);
+  font-weight: 500;
+}
