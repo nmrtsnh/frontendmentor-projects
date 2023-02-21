@@ -1,0 +1,66 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  /* position: relative; */
+  display: grid;
+  place-items: center;
+}
+main {
+  max-width: 100%;
+  width: 440px;
+  text-align: center;
+
+  /* display: grid;
+  place-items: center; */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: transform(-50%, -50%); */
+}
+
+.balance {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: aqua;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 20px;
+}
+
+.logo {
+  margin-left: auto;
+}
+.spending {
+  background-color: red;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 20px;
+}
+.bars {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+
+.bar {
+  height: 20px;
+  max-width: 100%;
+  width: 20px;
+  background-color: yellow;
+}
+
+.horizontal-line::after {
+  content: "";
+  display: block;
+  border: 2px solid blue;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
