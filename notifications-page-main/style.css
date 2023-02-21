@@ -13,9 +13,8 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-size: 16px;
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: hsl(211, 68%, 94%);
