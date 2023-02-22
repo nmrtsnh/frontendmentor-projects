@@ -6,14 +6,21 @@
   color: hsl(228, 45%, 44%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   /* position: relative; */
   display: grid;
   place-items: center;
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans";
 }
 main {
   max-width: 100%;
-  width: 440px;
+  width: 380px;
   text-align: center;
 
   /* display: grid;
@@ -25,12 +32,25 @@ main {
 }
 
 .balance {
+  margin-top: 70px;
   display: flex;
   margin-bottom: 20px;
-  background-color: aqua;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 20px;
+  background-color: hsl(10, 79%, 65%);
+  padding: 20px;
+
+  text-align: left;
+}
+
+.my-balance {
+  color: white;
+}
+.text {
+  font-size: 14px;
+}
+
+.balance-amount {
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .logo {
