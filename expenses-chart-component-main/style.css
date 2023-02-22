@@ -20,7 +20,7 @@ body {
 }
 main {
   max-width: 100%;
-  width: 380px;
+  width: 360px;
   text-align: center;
 
   /* display: grid;
@@ -31,7 +31,7 @@ main {
   translate: transform(-50%, -50%); */
 }
 
-.balance {
+.balance-section {
   margin-top: 70px;
   display: flex;
   margin-bottom: 20px;
@@ -56,25 +56,68 @@ main {
 .logo {
   margin-left: auto;
 }
-.spending {
-  background-color: red;
-  padding-left: 40px;
-  padding-right: 40px;
+.spending-section {
+  background-color: white;
+
+  /* padding-left: 30px;
+  padding-right: 30px; */
   border-radius: 20px;
+  height: 380px;
+}
+
+.spending-heading {
+  font-size: 26px;
+  padding: 35px;
+  font-weight: 700;
+}
+.spending-bars {
+  /* position: relative; */
 }
 .bars {
   display: flex;
+
   text-align: center;
-  gap: 20px;
+  gap: 12px;
+  padding: 20px;
 }
 
 .bar {
-  height: 20px;
+  height: 120px;
   max-width: 100%;
-  width: 20px;
-  background-color: yellow;
+  width: 35px;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  display: block;
+}
+.bar-1 {
+  height: 40px;
+}
+.bar-2 {
+  height: 80px;
 }
 
+.bar-3 {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.bar-4 {
+  height: 70px;
+}
+
+.bar-5 {
+  height: 60px;
+}
+
+.bar-6 {
+  height: 100px;
+}
+
+.bar-5 {
+  height: 65px;
+}
+.spending-day {
+  /* position: absolute; */
+}
 .horizontal-line::after {
   content: "";
   display: block;
