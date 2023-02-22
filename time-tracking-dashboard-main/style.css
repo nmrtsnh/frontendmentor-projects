@@ -86,6 +86,9 @@ main {
   /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
+.background {
+}
+
 .container-info {
   text-align: left;
   color: white;
