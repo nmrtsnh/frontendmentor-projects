@@ -78,37 +78,140 @@ main {
   font-size: 16px;
 }
 .container-2 {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   margin-top: 40px;
   row-gap: 60px;
+  height: 505px;
   /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
-.background {
+/* .work-container .background {
+  width: 31.5%;
+  height: 30%;
+  border-radius: 10px;
+
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: -1;
+
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+} */
+
+.background-container .background {
+  width: 31.5%;
+  height: 30%;
+  border-radius: 10px;
+
+  /* background-color: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right top; */
+}
+
+.work-container .background {
+  position: absolute;
+  top: -8%;
+  left: 0;
+  z-index: -1;
+
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.play-container .background {
+  position: absolute;
+  /* top: -40px; */
+  top: -8%;
+  right: 34.2%;
+  z-index: -1;
+
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.study-container .background {
+  position: absolute;
+  top: -8%;
+  right: 0;
+  z-index: -1;
+
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.exercise-container .background {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  z-index: -1;
+
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.social-container .background {
+  position: absolute;
+  top: 48%;
+  right: 34.2%;
+  z-index: -1;
+
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.selfcare-container .background {
+  position: absolute;
+  top: 48%;
+  right: 0;
+  z-index: -1;
+
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .container-info {
   text-align: left;
   color: white;
-  padding: 20px 60px;
-  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 110px;
+
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
 .container-title {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
 .container-time {
-  font-size: 42px;
+  font-size: 60px;
 }
 
 .container-tracking {
   margin-top: 20px;
   font-size: 14px;
+  color: white;
 }
 .container {
   border-radius: 20px;
