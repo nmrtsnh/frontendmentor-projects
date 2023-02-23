@@ -94,11 +94,13 @@ main {
   margin-top: 50px;
   /* gap: 30px; */
 }
-.card {
+.card-dashboard {
   background-color: hsl(228, 28%, 20%);
   width: 100%;
   max-width: 270px;
-  height: 200px;
+  height: 210px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .hr {
@@ -134,4 +136,65 @@ main {
   color: hsl(228, 34%, 66%);
   font-size: 14px;
   margin-left: 5px;
+}
+
+.card-followers {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.num-followers {
+  font-size: 55px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.text-capslock {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 15px;
+}
+
+.stats-card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.stats-num {
+  color: hsl(163, 72%, 41%);
+  font-size: 13px;
+}
+
+.stats-down {
+  color: hsl(356, 69%, 56%);
+}
+
+.stats-link {
+  padding-bottom: 8px;
+}
+
+.section-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 50px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.current-pageviews-stats {
+  display: flex;
+}
+
+.card-overview {
+  padding: 20px;
+  background-color: hsl(228, 28%, 20%);
+  width: 100%;
+  max-width: 270px;
+  height: 140px;
+  border-radius: 10px;
 }
