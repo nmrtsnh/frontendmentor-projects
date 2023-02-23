@@ -12,30 +12,83 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Interactive pricing component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial
+    <main>
+      <header class="header">
+        <div class="header-img">
+          <img src="images/pattern-circles.svg" />
+        </div>
+        <div class="header-details">
+          <h1 class="primary-heading">Simple, traffic-based pricing</h1>
+          <p class="primary-text">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+        </div>
+      </header>
 
+      <div class="container">
+        <div class="container-header">
+          <div class="container-details">
+            <p>100K Pageviews</p>
+            <p><span>$16.00 </span>/month</p>
+          </div>
+          <div class="container-slider">
+            <input type="range" class="slider" name="slider" />
+          </div>
+          <div class="toggle-container">
+            <p>Monthly Billing</p>
+            <div class="toggle">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider-round"></span>
+              </label>
+            </div>
+            <p>Yearly Billing</p>
+          </div>
+          <p>-25% discount</p>
+        </div>
+
+        <div class="container-footer">
+          <div class="container-feature">
+            <ul>
+              <li>
+                <img src="images/icon-check.svg" />
+                Unlimited websites
+              </li>
+              <li>
+                <img src="images/icon-check.svg" />
+                100% data ownership
+              </li>
+              <li>
+                <img src="images/icon-check.svg" />
+                Email reports
+              </li>
+            </ul>
+          </div>
+          <div class="container-button">
+            <button class="trial-button" type="button">Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>

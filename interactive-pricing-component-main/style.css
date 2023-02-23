@@ -1,0 +1,63 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  position: relative;
+}
+
+.header {
+  background-image: url("images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  min-height: 40vh;
+  position: relative;
+}
+.header-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-details {
+  padding-top: 120px;
+}
+.primary-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.primary-text {
+  font-size: 12px;
+  color: hsl(225, 20%, 60%);
+}
+
+.container {
+  background-color: yellow;
+  max-width: 100%;
+  width: 550px;
+  position: absolute;
+  top: 80%;
+
+  /* text-align: center; */
+  left: 30%;
+}
+
+.container
