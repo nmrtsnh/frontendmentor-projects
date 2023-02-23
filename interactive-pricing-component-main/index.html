@@ -40,24 +40,41 @@
       <div class="container">
         <div class="container-header">
           <div class="container-details">
-            <p>100K Pageviews</p>
-            <p><span>$16.00 </span>/month</p>
+            <p class="container-text pageviews">100K Pageviews</p>
+            <p class="container-text">
+              <span class="price-per-month">$16.00 </span>/month
+            </p>
           </div>
-          <div class="container-slider">
-            <input type="range" class="slider" name="slider" />
+
+          <!-- <input
+            type="range"
+            class="slider"
+            name="slider"
+            min="0"
+            max="4"
+            value="2"
+          /> -->
+          <div class="main-2">
+            <input type="range" min="0" max="100" value="50" id="slider" />
+            <div id="selector">
+              <div class="selectBtn"></div>
+            </div>
+            <div id="progressBar"></div>
           </div>
+
           <div class="toggle-container">
             <p>Monthly Billing</p>
             <div class="toggle">
               <label class="switch">
                 <input type="checkbox" />
-                <span class="slider-round"></span>
+                <span class="toggle-1 round"></span>
               </label>
             </div>
             <p>Yearly Billing</p>
+            <p>-25% discount</p>
           </div>
-          <p>-25% discount</p>
         </div>
+        <div class="horizontal-line"></div>
 
         <div class="container-footer">
           <div class="container-feature">
