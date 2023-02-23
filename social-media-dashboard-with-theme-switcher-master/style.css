@@ -123,10 +123,15 @@ main {
   background-color: hsl(348, 97%, 39%);
 }
 
-.card {
-  text-align: center;
+.card-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.card-social {
-  padding: 20px;
+.social-handle {
+  text-decoration: none;
+  color: hsl(228, 34%, 66%);
+  font-size: 14px;
+  margin-left: 5px;
 }
