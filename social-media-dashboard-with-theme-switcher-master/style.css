@@ -122,3 +122,11 @@ main {
 .youtube {
   background-color: hsl(348, 97%, 39%);
 }
+
+.card {
+  text-align: center;
+}
+
+.card-social {
+  padding: 20px;
+}
