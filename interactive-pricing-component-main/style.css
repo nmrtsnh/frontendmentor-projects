@@ -25,7 +25,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  min-height: 40vh;
+  min-height: 50vh;
   position: relative;
 }
 .header-img {
@@ -52,14 +52,14 @@ main {
 .container {
   background-color: white;
   max-width: 100%;
-  width: 550px;
+  width: 500px;
   position: absolute;
-  top: 74%;
+  top: 70%;
+  box-shadow: 0 10px 40px -20px rgb(46 78 150 / 40%);
 
-  /* text-align: center; */
   left: 30%;
-  padding: 30px;
-  border: 1px solid grey;
+  padding: 50px 30px;
+
   border-radius: 10px;
 }
 .container-header {
@@ -158,6 +158,21 @@ main {
   margin-top: 30px;
 }
 
+.text {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: hsl(225, 20%, 60%);
+  font-size: 11px;
+}
+
+.discount {
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  border-radius: 10px;
+  padding: 0.1rem 0.6rem;
+  font-size: 10px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -198,12 +213,36 @@ main {
   border-radius: 34px;
 }
 
-.toggle-container p {
-  font-size: 12px;
-}
-
 .horizontal-line {
   display: block;
-  border: 1px solid grey;
-  width: 300px;
+  border: 1px solid hsl(224, 65%, 95%);
+  margin-bottom: 20px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  list-style: none;
+}
+.card-item {
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: hsl(225, 20%, 60%);
+}
+.checked-icon {
+  width: 16px;
+}
+
+.trial-button {
+  margin-top: 25px;
+
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(226, 100%, 87%);
+  font-size: 13px;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 25px;
 }
