@@ -174,20 +174,30 @@ main {
 .stats-link {
   padding-bottom: 8px;
 }
-
+.overview-heading {
+  margin-top: 40px;
+}
+.secondary-heading {
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  font-weight: 400;
+}
 .section-overview {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .card-header {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .current-pageviews-stats {
   display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .card-overview {
@@ -197,4 +207,10 @@ main {
   max-width: 270px;
   height: 140px;
   border-radius: 10px;
+}
+
+.current-stats {
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
 }
