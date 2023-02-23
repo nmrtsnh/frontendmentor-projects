@@ -78,6 +78,27 @@ main {
   font-size: 24px;
   font-weight: 700;
 }
+.percent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tip-percent {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-size: 17px;
+  padding: 7px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.custom-percent {
+  background-color: hsl(189, 41%, 97%);
+  color: black;
+}
 
 .total-people {
   position: relative;
