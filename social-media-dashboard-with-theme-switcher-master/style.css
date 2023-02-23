@@ -1,0 +1,89 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  background-color: hsl(230, 17%, 14%);
+  min-height: 100vh;
+  padding: 50px 120px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container-left {
+  color: hsl(0, 0%, 100%);
+}
+.primary-heading {
+  font-size: 30px;
+  font-weight: 400;
+}
+.text {
+  font-size: 15px;
+  color: hsl(228, 34%, 66%);
+}
+
+.header-container-right {
+  display: flex;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    hsl(210, 78%, 56%) 5%,
+    hsl(146, 68%, 55%) 100%
+  );
+  transition: 0.4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: hsl(230, 17%, 14%);
+  transition: 0.4s;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 15px;
+}
