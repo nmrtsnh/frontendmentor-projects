@@ -18,6 +18,7 @@ body {
 
 main {
   position: relative;
+  min-height: 100vh;
 }
 
 .header {
@@ -30,7 +31,7 @@ main {
 }
 .header-img {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -54,7 +55,7 @@ main {
   max-width: 100%;
   width: 500px;
   position: absolute;
-  top: 70%;
+  top: 30%;
   box-shadow: 0 10px 40px -20px rgb(46 78 150 / 40%);
 
   left: 30%;
