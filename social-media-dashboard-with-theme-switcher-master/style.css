@@ -16,7 +16,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-main {
+.main {
   background-color: hsl(230, 17%, 14%);
   min-height: 100vh;
   padding: 50px 120px;
@@ -213,4 +213,9 @@ main {
   font-size: 30px;
   color: hsl(0, 0%, 100%);
   font-weight: 400;
+}
+
+.dark-theme {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
 }
