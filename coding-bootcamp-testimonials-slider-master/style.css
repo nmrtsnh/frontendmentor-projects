@@ -5,3 +5,32 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* font-size: 32px; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-left {
+  background-color: mediumturquoise;
+}
+
+.container-right {
+  background-color: wheat;
+}
+
+.bg-pattern {
+  width: 80%;
+}
