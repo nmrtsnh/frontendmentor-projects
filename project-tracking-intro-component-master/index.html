@@ -12,24 +12,61 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Project tracking intro component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Product Features Pricing Login New Monograph Dashboard Powerful insights
-    into your team Project planning and time tracking for agile teams Schedule a
-    demo to see a live preview
+    <header>
+      <img class="logo" src="images/logo.svg" />
+      <ul class="header-section">
+        <li class="header-details">
+          <a class="header-link" href="#">Product</a>
+        </li>
+        <li class="header-details">
+          <a class="header-link" href="#">Features</a>
+        </li>
+        <li class="header-details">
+          <a class="header-link" href="#">Pricing</a>
+        </li>
+        <li class="header-details">
+          <a class="header-link" href="#">Login</a>
+        </li>
+      </ul>
+    </header>
+
+    <secion class="hero">
+      <div class="hero-content">
+        <div class="card-1">
+          <p class="text-new">New</p>
+          <p class="text">Monograph Dashboard</p>
+        </div>
+        <div class="card-2">
+          <h1 class="primary-heading">Powerful insights into your team</h1>
+          <p class="primary-text">
+            roject planning and time tracking for agile teams
+          </p>
+        </div>
+        <div class="card-3">
+          <div class="button">
+            <button class="demo-btn" type="button">schedule a demo</button>
+          </div>
+          <p class="text">to see a preview</p>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/illustration-devices.svg" />
+      </div>
+    </secion>
+
+    Product Features Pricing Login New P Schedule a demo to see a live preview
 
     <footer>
       <p class="attribution">
