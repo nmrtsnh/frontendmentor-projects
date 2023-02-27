@@ -1,7 +1,75 @@
-  .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f6f6fe;
+
+  min-height: 100vh;
+}
+
+.background-img-top {
+  /* background-repeat: no-repeat; */
+  position: absolute;
+  right: 20px;
+  bottom: 21%;
+}
+
+.background-img-bottom {
+  position: absolute;
+  left: 20px;
+  top: 55%;
+  /* bottom: 90%; */
+}
+
+.section-heading {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: hsl(233, 13%, 49%);
+}
+
+.toggle {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.text {
+  color: hsl(234, 14%, 74%);
+}
+
+.basic {
+  background-color: wheat;
+}
+
+.professional {
+  background-color: salmon;
+}
+
+.master {
+  background-color: yellow;
+}
