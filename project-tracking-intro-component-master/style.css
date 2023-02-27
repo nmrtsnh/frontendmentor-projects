@@ -15,3 +15,31 @@
 body {
   font-family: "Barlow", sans-serif;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.header-section {
+  display: flex;
+  list-style: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero-content {
+  background-color: violet;
+}
+
+.card-1 {
+  display: flex;
+}
+
+.card-3 {
+  display: flex;
+}
