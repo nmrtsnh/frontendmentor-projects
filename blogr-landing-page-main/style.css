@@ -133,3 +133,47 @@ body {
   cursor: pointer;
   color: hsl(0, 0%, 100%);
 }
+.hero {
+  /* margin-top: 30px; */
+}
+
+.heading-secondary {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.card-1 {
+  margin-top: 100px;
+  margin-left: 180px;
+  width: 520px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: hsl(208, 49%, 24%);
+  font-family: "Overpass", sans-serif;
+}
+
+.para {
+  margin-bottom: 35px;
+  font-size: 16px;
+  color: hsl(207, 13%, 34%);
+  line-height: 1.8;
+}
+
+.card-2 img {
+  position: absolute;
+  top: -15%;
+  left: 57%;
+  width: 60%;
+}
