@@ -23,7 +23,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 10%);
 }
 .header {
   display: flex;
@@ -31,37 +31,44 @@ body {
   /* justify-content: center; */
   gap: 300px;
 
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .heading {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
+  letter-spacing: 0.01em;
 }
 
 .text {
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
 }
 .number {
   margin-top: -20px;
+  margin-right: 18px;
+
+  font-size: 14px;
 }
 .heading-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .toggle-wrapper {
   display: flex;
+  margin-left: 5px;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 70px;
+  height: 25px;
 }
 .switch input {
   opacity: 0;
@@ -76,7 +83,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: hsl(223, 31%, 20%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -84,11 +91,11 @@ body {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 16px;
+  width: 16px;
+  left: 5px;
+  bottom: 5px;
+  background-color: hsl(6, 63%, 50%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -102,12 +109,58 @@ body {
 }
 
 .display-container {
-  background-color: yellow;
+  background-color: hsl(224, 36%, 15%);
   margin-bottom: 20px;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
+.display-first-line {
+  margin-left: auto;
+
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.display-second-line {
+  margin-left: auto;
+  color: white;
+  font-size: 50px;
+  margin-top: auto;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
 .calculator-wrapper {
-  background-color: wheat;
+  background-color: hsl(223, 31%, 20%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.calc-btn {
+  height: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  box-shadow: 0 4px hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+}
+
+.del-btn {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
 }
