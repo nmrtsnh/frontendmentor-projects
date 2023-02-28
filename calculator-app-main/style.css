@@ -30,6 +30,7 @@ body {
 
   /* justify-content: center; */
   gap: 300px;
+  margin-top: 80px;
 
   margin-bottom: 20px;
 }
@@ -175,4 +176,7 @@ body {
 }
 .equal-btn {
   grid-column: 3/-1;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 4px hsl(6, 70%, 34%);
+  color: white;
 }
