@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 body {
+  font-family: "Ubuntu", sans-serif;
 }
 
 .header {
@@ -27,7 +28,7 @@ body {
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 50px 80px;
+  padding: 50px 150px;
 }
 
 .header-left {
@@ -44,6 +45,22 @@ body {
   color: hsl(0, 0%, 100%);
   list-style: none;
   text-decoration: none;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.open-dropdown:hover {
+  text-decoration: underline;
+}
+
+.open-dropdown img {
+  margin-left: 10px;
+}
+
+.dropdown-list {
+  display: none;
 }
 .dropdown-list li {
   list-style: none;
@@ -53,4 +70,31 @@ body {
 .dropdown-list li a {
   text-decoration: none;
   color: black;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+}
+
+.login-btn {
+  border: none;
+  background-color: inherit;
+  color: hsl(0, 0%, 100%);
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 40px;
+  font-size: 16px;
+
+  color: hsl(353, 100%, 62%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
 }
