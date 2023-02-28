@@ -6,13 +6,15 @@
   color: hsl(228, 45%, 44%);
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 body {
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -133,10 +135,11 @@ body {
   cursor: pointer;
   color: hsl(0, 0%, 100%);
 }
-.hero {
-  /* margin-top: 30px; */
-}
 
+.section-1 {
+  overflow: hidden;
+  padding-bottom: 200px;
+}
 .heading-secondary {
   text-align: center;
   font-size: 35px;
@@ -144,16 +147,19 @@ body {
   margin-top: 100px;
 }
 
-.card {
+.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
   position: relative;
 }
-
-.card-1 {
-  margin-top: 100px;
-  margin-left: 180px;
+.hero-content {
   width: 520px;
+  margin-top: 85px;
+  margin-left: 100px;
+}
+.card-1 {
+  margin-bottom: 20px;
 }
 
 .title {
@@ -165,15 +171,27 @@ body {
 }
 
 .para {
-  margin-bottom: 35px;
+  margin: 10px 0px 50px 0px;
   font-size: 16px;
   color: hsl(207, 13%, 34%);
   line-height: 1.8;
 }
 
-.card-2 img {
+.hero-img {
   position: absolute;
-  top: -15%;
-  left: 57%;
-  width: 60%;
+  top: -25%;
+  left: 55%;
+}
+
+.section-2 {
+  display: flex;
+  margin-bottom: 100px;
+  height: 40vh;
+
+  background-image: url("images/bg-pattern-circles.svg"),
+    linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  border-bottom-left-radius: 70px;
+  background-repeat: no-repeat;
+  background-position: -65% 87%;
+  border-top-right-radius: 70px;
 }
