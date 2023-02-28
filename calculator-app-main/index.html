@@ -11,7 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Calculator app</title>
 
     <link rel="stylesheet" href="style.css" />
@@ -20,12 +25,17 @@
     <main class="calc">
       <div class="header">
         <h1 class="heading">calc</h1>
+
         <div class="heading-wrapper">
           <p class="text">theme</p>
-          <div class="toggle-wrapper">
-            <p class="text">1</p>
-            <p class="text">2</p>
-            <p class="text">3</p>
+
+          <div>
+            <div class="toggle-wrapper">
+              <p class="text">1</p>
+              <p class="text">2</p>
+              <p class="text">3</p>
+            </div>
+
             <div class="toggle">
               <label class="switch">
                 <input type="checkbox" checked />
@@ -41,7 +51,7 @@
         <p class="display-second-line">0</p>
       </div>
 
-      <div>
+      <div class="calculator-wrapper">
         <button class="calc-btn" type="button">7</button>
         <button class="calc-btn" type="button">8</button>
         <button class="calc-btn" type="button">9</button>
