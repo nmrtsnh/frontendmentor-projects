@@ -185,8 +185,11 @@ body {
 
 .section-2 {
   display: flex;
+  gap: 80px;
+
+  /* justify-content: space-around; */
   margin-bottom: 100px;
-  height: 40vh;
+  height: 45vh;
 
   background-image: url("images/bg-pattern-circles.svg"),
     linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -194,4 +197,27 @@ body {
   background-repeat: no-repeat;
   background-position: -65% 87%;
   border-top-right-radius: 70px;
+
+  /* position: relative; */
+}
+
+.info-right {
+  /* margin-left: 650px; */
+}
+.section-2-title {
+  margin-top: 100px;
+  color: hsl(0, 0%, 100%);
+}
+
+.section-2-para {
+  color: hsl(0, 0%, 100%);
+  width: 470px;
+  font-size: 14px;
+}
+
+.image-left {
+  margin-left: 40px;
+  position: relative;
+  bottom: 22%;
+  /* position: absolute; */
 }
