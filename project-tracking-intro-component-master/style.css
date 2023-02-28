@@ -18,6 +18,19 @@ body {
 
 main {
   margin-left: 120px;
+  position: relative;
+}
+
+.top-bg {
+  width: 750px;
+  height: 400px;
+  background-color: hsl(207, 33%, 95%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 70px;
+
+  /* z-index: -1; */
 }
 
 header {
@@ -25,6 +38,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
+
   /* margin: 40px; */
 }
 /* .logo {
@@ -34,7 +48,7 @@ header {
 .header-section {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
   margin-right: 100px;
 }
 
@@ -51,7 +65,7 @@ header {
   margin-top: 5px;
   height: 10px;
   width: 10px;
-  background-color: hsl(207, 33%, 95%);
+  background-color: hsl(231, 7%, 65%);
   border-radius: 50%;
 }
 .header-section .login a {
@@ -94,13 +108,13 @@ header {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   color: hsl(230, 29%, 20%);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .primary-text {
   font-size: 18px;
   width: 280px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-weight: 400;
 }
 .card-3 {
