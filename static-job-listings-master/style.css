@@ -23,12 +23,13 @@ body {
 
 header {
   background-color: hsl(180, 29%, 50%);
+  width: 100%;
 }
 
 .filter-section {
   content: "";
   max-width: 100%;
-  width: 850px;
+  width: 1000px;
   height: 100%;
   background-color: white;
   padding: 16px;
@@ -56,7 +57,7 @@ header {
 }
 .company {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .company-name p {
@@ -103,7 +104,7 @@ header {
   padding-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  /* letter-spacing: 0.1rem; */
   line-height: 1.2;
 }
 
@@ -126,8 +127,8 @@ header {
 
 .dot-wrapper {
   margin-top: 4px;
-  margin-left: 12px;
-  margin-right: 8px;
+  margin-left: 20px;
+  margin-right: 18px;
   content: "";
   width: 4px;
   height: 4px;
@@ -141,4 +142,17 @@ header {
 
 .tag-btn {
   background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tag-btn:hover {
+  color: white;
+  background-color: hsl(180, 29%, 50%);
 }
