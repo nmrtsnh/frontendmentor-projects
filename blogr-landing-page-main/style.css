@@ -21,7 +21,7 @@ body {
   background-image: url("images/bg-pattern-intro-desktop.svg"),
     linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   /* height: 100vh; */
-  height: 60vh;
+  /* height: 60vh; */
   /* width: 100%; */
   background-repeat: no-repeat;
   background-position: center;
@@ -75,6 +75,10 @@ body {
   color: black;
   font-family: "Overpass", sans-serif;
   font-size: 16px;
+}
+
+.button {
+  padding-bottom: 120px;
 }
 
 .login-btn {
@@ -189,7 +193,7 @@ body {
 
   /* justify-content: space-around; */
   margin-bottom: 100px;
-  height: 45vh;
+  /* height: 45vh; */
 
   background-image: url("images/bg-pattern-circles.svg"),
     linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -197,6 +201,7 @@ body {
   background-repeat: no-repeat;
   background-position: -65% 87%;
   border-top-right-radius: 70px;
+  height: 380px;
 
   /* position: relative; */
 }
@@ -220,4 +225,33 @@ body {
   position: relative;
   bottom: 22%;
   /* position: absolute; */
+}
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.desktop-img img {
+  position: absolute;
+  top: 0;
+  right: 52%;
+}
+.hero-content-section-3 {
+  margin-top: 150px;
+  margin-right: 120px;
+  margin-left: auto;
+  /* position: absolute; */
+}
+
+.footer {
+  background-color: wheat;
+  display: flex;
+}
+
+.footer-details {
+  display: flex;
 }
