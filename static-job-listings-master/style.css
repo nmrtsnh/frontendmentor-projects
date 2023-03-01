@@ -112,16 +112,16 @@ header {
   color: hsl(180, 14%, 20%);
 }
 
+.role a:hover {
+  color: hsl(180, 29%, 50%);
+}
+
 .posting-details {
   display: flex;
   color: hsl(180, 8%, 52%);
   font-size: 14px;
   font-weight: 500;
   /* gap: 5px; */
-}
-
-.tags {
-  margin: auto 10px auto auto;
 }
 
 .dot-wrapper {
@@ -133,4 +133,12 @@ header {
   height: 4px;
   background-color: hsl(180, 8%, 52%);
   border-radius: 50%;
+}
+
+.tags {
+  margin: auto 10px auto auto;
+}
+
+.tag-btn {
+  background-color: hsl(180, 31%, 95%);
 }
