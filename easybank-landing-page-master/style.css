@@ -19,8 +19,39 @@ body {
 
 .header {
   display: flex;
+
+  /* background-color: tan; */
+  padding: 3rem 10rem;
+  justify-content: space-between;
+}
+
+.header-logo {
+  flex: 1;
+}
+
+.header-details {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
 }
 
 .header-links {
   display: flex;
+  gap: 30px;
+  list-style: none;
+  /* justify-content: center;
+  align-items: center;
+  text-align: center; */
+  /* margin-left: 10em; */
+  font-size: 0.9rem;
+}
+
+.header-links li a {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  font-weight: 400;
+}
+
+.button {
+  margin-left: auto;
 }
