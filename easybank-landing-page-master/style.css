@@ -37,12 +37,9 @@ body {
 
 .header-links {
   display: flex;
-  gap: 30px;
+  gap: 2rem;
   list-style: none;
-  /* justify-content: center;
-  align-items: center;
-  text-align: center; */
-  /* margin-left: 10em; */
+
   font-size: 0.9rem;
 }
 
@@ -52,6 +49,18 @@ body {
   font-weight: 400;
 }
 
-.button {
-  margin-left: auto;
+.request-btn {
+  background: linear-gradient(to right, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+  border: none;
+  padding: 0.9rem 2rem;
+  /* padding: 15px 30px; */
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.request-btn:hover {
+  opacity: 0.5;
 }
