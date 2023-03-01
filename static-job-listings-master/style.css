@@ -97,8 +97,24 @@ header {
 .feature {
   background-color: hsl(180, 14%, 20%);
 }
+
+.role {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+}
+
+.role a {
+  text-decoration: none;
+  color: hsl(180, 14%, 20%);
+}
+
 .posting-details {
   display: flex;
+  gap: 10px;
 }
 
 .tags {
