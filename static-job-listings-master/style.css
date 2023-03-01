@@ -114,9 +114,23 @@ header {
 
 .posting-details {
   display: flex;
-  gap: 10px;
+  color: hsl(180, 8%, 52%);
+  font-size: 14px;
+  font-weight: 500;
+  /* gap: 5px; */
 }
 
 .tags {
   margin: auto 10px auto auto;
+}
+
+.dot-wrapper {
+  margin-top: 4px;
+  margin-left: 12px;
+  margin-right: 8px;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: hsl(180, 8%, 52%);
+  border-radius: 50%;
 }
