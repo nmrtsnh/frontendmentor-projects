@@ -20,8 +20,8 @@ body {
 .header {
   display: flex;
 
-  /* background-color: tan; */
-  padding: 3rem 10rem;
+  background-color: white;
+  padding: 1.5rem 10rem;
   justify-content: space-between;
 }
 
@@ -63,4 +63,33 @@ body {
 
 .request-btn:hover {
   opacity: 0.5;
+}
+
+.section-hero {
+  display: flex;
+  position: relative;
+  height: 800px;
+  width: 1450px;
+  overflow: hidden;
+}
+
+.card-content {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.image-1 {
+  position: absolute;
+  top: -25%;
+  left: 40%;
+  z-index: -1;
+  width: 70%;
+}
+
+.image-2 {
+  position: absolute;
+  left: 62%;
+  top: -14%;
+  z-index: -1;
+  width: 45%;
 }
