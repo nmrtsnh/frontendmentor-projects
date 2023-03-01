@@ -12,126 +12,380 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Job Listings</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Item Start -->
-    Photosnap New! Featured Senior Frontend Developer 1d ago Full Time USA only
-    <!-- Role -->
-    Frontend
-    <!-- Level -->
-    Senior
-    <!-- Languages -->
-    HTML CSS JavaScript
-    <!-- Item End -->
+    <header>
+      <img src="images/bg-header-desktop.svg" />
+    </header>
 
-    <!-- Item Start -->
-    Manage New! Featured Fullstack Developer 1d ago Part Time Remote
-    <!-- Role -->
-    Fullstack
-    <!-- Level -->
-    Midweight
-    <!-- Languages -->
-    Python
-    <!-- Tools -->
-    React
-    <!-- Item End -->
+    <main>
+      <div class="filter-section display"></div>
+      <div class="card card-1">
+        <div class="company-img">
+          <img src="images/photosnap.svg" />
+        </div>
 
-    <!-- Item Start -->
-    Account New! Junior Frontend Developer 2d ago Part Time USA only
-    <!-- Role -->
-    Frontend
-    <!-- Level -->
-    Junior
-    <!-- Languages -->
-    JavaScript
-    <!-- Tools -->
-    React Sass
-    <!-- Item End -->
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Photosnap</p>
+            </div>
+            <div class="job-posting">
+              <div class="new">New</div>
+              <div class="feature">Feature</div>
+            </div>
+          </div>
 
-    <!-- Item Start -->
-    MyHome Junior Frontend Developer 5d ago Contract USA only
-    <!-- Role -->
-    Frontend
-    <!-- Level -->
-    Junior
-    <!-- Languages -->
-    CSS JavaScript
-    <!-- Item End -->
+          <h1 class="role">Senior Frontend Developer</h1>
 
-    <!-- Item Start -->
-    Loop Studios Software Engineer 1w ago Full Time Worldwide
-    <!-- Role -->
-    Fullstack
-    <!-- Level -->
-    Midweight
-    <!-- Languages -->
-    JavaScript Ruby
-    <!-- Tools -->
-    Sass
-    <!-- Item End -->
+          <div>
+            <span>1d ago</span>
+            <div></div>
+            <span>Full Time</span>
+            <div></div>
+            <span>USA Only</span>
+          </div>
+        </div>
 
-    <!-- Item Start -->
-    FaceIt Junior Backend Developer 2w ago Full Time UK only
-    <!-- Role -->
-    Backend
-    <!-- Level -->
-    Junior
-    <!-- Languages -->
-    Ruby
-    <!-- Tools -->
-    RoR
-    <!-- Item End -->
+        <div class="tags">
+          <button class="tag-btn" type="button">Frontend</button>
+          <button class="tag-btn" type="button">Senior</button>
+          <button class="tag-btn" type="button">HTML</button>
+          <button class="tag-btn" type="button">CSS</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+        </div>
+      </div>
 
-    <!-- Item Start -->
-    Shortly Junior Developer 2w ago Full Time Worldwide
-    <!-- Role -->
-    Frontend
-    <!-- Level -->
-    Junior
-    <!-- Languages -->
-    HTML JavaScript
-    <!-- Tools -->
-    Sass
-    <!-- Item End -->
+      <div class="card card-2">
+        <div class="company-img">
+          <img src="images/manage.svg" />
+        </div>
 
-    <!-- Item Start -->
-    Insure Junior Frontend Developer 2w ago Full Time USA only
-    <!-- Role -->
-    Frontend
-    <!-- Level -->
-    Junior
-    <!-- Languages -->
-    JavaScript
-    <!-- Tools -->
-    Vue Sass
-    <!-- Item End -->
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Manage</p>
+            </div>
+            <div class="job-posting">
+              <div class="new">New</div>
+              <div class="feature">Feature</div>
+            </div>
+          </div>
 
-    <!-- Item Start -->
-    Eyecam Co. Full Stack Engineer 3w ago Full Time Worldwide
-    <!-- Role -->
-    Fullstack
-    <!-- Level -->
-    Midweight
-    <!-- Languages -->
-    JavaScript Python
-    <!-- Tools -->
-    Django
-    <!-- Item End -->
+          <h1 class="role">Fullstack Developer</h1>
 
-    <!-- Item Start -->
-    The Air Filter Company Front-end Dev 1mo ago Part Time Worldwide
-    <!-- Role -->
-    Frontend
-    <!-- Level -->
-    Junior
-    <!-- Languages -->
-    JavaScript
-    <!-- Tools -->
-    React Sass
-    <!-- Item End -->
+          <div>
+            <span>1d ago</span>
+            <div></div>
+            <span>Part Time</span>
+            <div></div>
+            <span>Remote</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Fullstack</button>
+          <button class="tag-btn" type="button">Midweight</button>
+          <button class="tag-btn" type="button">Python</button>
+          <button class="tag-btn" type="button">React</button>
+        </div>
+      </div>
+
+      <div class="card card-3">
+        <div class="company-img">
+          <img src="images/account.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Account</p>
+            </div>
+            <div class="job-posting">
+              <div class="new">New</div>
+            </div>
+          </div>
+
+          <h1 class="role">Junior Frontend Developer</h1>
+
+          <div>
+            <span>2d ago</span>
+            <div></div>
+            <span>Part Time</span>
+            <div></div>
+            <span>USA Only</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Frontend</button>
+          <button class="tag-btn" type="button">Junior</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+          <button class="tag-btn" type="button">React</button>
+          <button class="tag-btn" type="button">Sass</button>
+        </div>
+      </div>
+
+      <div class="card card-4">
+        <div class="company-img">
+          <img src="images/myhome.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>MyHome</p>
+            </div>
+            <div class="job-posting">
+              <div class="new"></div>
+              <div class="feature"></div>
+            </div>
+          </div>
+
+          <h1 class="role">Junior Frontend Developer</h1>
+
+          <div>
+            <span>5d ago</span>
+            <div></div>
+            <span>Contract</span>
+            <div></div>
+            <span>USA Only</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Frontend</button>
+          <button class="tag-btn" type="button">Junior</button>
+          <button class="tag-btn" type="button">CSS</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+        </div>
+      </div>
+
+      <div class="card card-5">
+        <div class="company-img">
+          <img src="images/loop-studios.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Loop Studios</p>
+            </div>
+            <div class="job-posting">
+              <div class="new"></div>
+              <div class="feature"></div>
+            </div>
+          </div>
+
+          <h1 class="role">Software Engineer</h1>
+
+          <div>
+            <span>1w ago</span>
+            <div></div>
+            <span>Full Time</span>
+            <div></div>
+            <span>Worldwide</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Fullstack</button>
+          <button class="tag-btn" type="button">Midweight</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+          <button class="tag-btn" type="button">Ruby</button>
+          <button class="tag-btn" type="button">Sass</button>
+        </div>
+      </div>
+
+      <div class="card card-6">
+        <div class="company-img">
+          <img src="images/faceit.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Facelt</p>
+            </div>
+            <div class="job-posting">
+              <div class="new"></div>
+              <div class="feature"></div>
+            </div>
+          </div>
+
+          <h1 class="role">Junior Backend Developer</h1>
+
+          <div>
+            <span>2w ago</span>
+            <div></div>
+            <span>Full Time</span>
+            <div></div>
+            <span>UK Only</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Backend</button>
+          <button class="tag-btn" type="button">Junior</button>
+          <button class="tag-btn" type="button">Ruby</button>
+          <button class="tag-btn" type="button">RoR</button>
+        </div>
+      </div>
+
+      <div class="card card-7">
+        <div class="company-img">
+          <img src="images/shortly.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Shortly</p>
+            </div>
+            <div class="job-posting">
+              <div class="new"></div>
+              <div class="feature"></div>
+            </div>
+          </div>
+
+          <h1 class="role">Junior Developer</h1>
+
+          <div>
+            <span>2w ago</span>
+            <div></div>
+            <span>Full Time</span>
+            <div></div>
+            <span>Worldwide</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Frontend</button>
+          <button class="tag-btn" type="button">Junior</button>
+          <button class="tag-btn" type="button">HTML</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+          <button class="tag-btn" type="button">Sass</button>
+        </div>
+      </div>
+
+      <div class="card card-8">
+        <div class="company-img">
+          <img src="images/insure.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Insure</p>
+            </div>
+            <div class="job-posting">
+              <div class="new"></div>
+              <div class="feature"></div>
+            </div>
+          </div>
+
+          <h1 class="role">Junior Frontend Developer</h1>
+
+          <div>
+            <span>2w ago</span>
+            <div></div>
+            <span>Full Time</span>
+            <div></div>
+            <span>USA Only</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Frontend</button>
+          <button class="tag-btn" type="button">Junior</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+          <button class="tag-btn" type="button">Vue</button>
+          <button class="tag-btn" type="button">Sass</button>
+        </div>
+      </div>
+
+      <div class="card card-9">
+        <div class="company-img">
+          <img src="images/eyecam-co.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>Eyecam Co.</p>
+            </div>
+            <div class="job-posting">
+              <div class="new"></div>
+              <div class="feature"></div>
+            </div>
+          </div>
+
+          <h1 class="role">Fullstack Engineer</h1>
+
+          <div>
+            <span>3w ago</span>
+            <div></div>
+            <span>Full Time</span>
+            <div></div>
+            <span>Worldwide</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Fullstack</button>
+          <button class="tag-btn" type="button">Midweight</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+          <button class="tag-btn" type="button">Python</button>
+          <button class="tag-btn" type="button">Django</button>
+        </div>
+      </div>
+
+      <div class="card card-10">
+        <div class="company-img">
+          <img src="images/the-air-filter-company.svg" />
+        </div>
+
+        <div class="job-details">
+          <div class="company">
+            <div class="company-name">
+              <p>The Air Filter Company</p>
+            </div>
+            <div class="job-posting">
+              <div class="new"></div>
+              <div class="feature"></div>
+            </div>
+          </div>
+
+          <h1 class="role">Front-end Dev</h1>
+
+          <div>
+            <span>1m ago</span>
+            <div></div>
+            <span>Part Time</span>
+            <div></div>
+            <span>Worldwide</span>
+          </div>
+        </div>
+
+        <div class="tags">
+          <button class="tag-btn" type="button">Frontend</button>
+          <button class="tag-btn" type="button">Junior</button>
+          <button class="tag-btn" type="button">JavaScript</button>
+          <button class="tag-btn" type="button">React</button>
+          <button class="tag-btn" type="button">Sass</button>
+        </div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
