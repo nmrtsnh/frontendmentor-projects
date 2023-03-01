@@ -16,3 +16,11 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
 }
+
+.header {
+  display: flex;
+}
+
+.header-links {
+  display: flex;
+}
