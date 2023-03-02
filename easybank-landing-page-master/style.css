@@ -23,6 +23,8 @@ body {
   background-color: white;
   padding: 1.5rem 10rem;
   justify-content: space-between;
+
+  /* box-shadow: 5px 5px 5px 5px red; */
 }
 
 .header-logo {
@@ -71,11 +73,18 @@ body {
   height: 800px;
   width: 1450px;
   overflow: hidden;
+  background-color: #f9f9f9;
+  z-index: -1;
 }
 
 .card-content {
   width: 500px;
-  margin-left: 50px;
+  margin-top: 5rem;
+  margin-left: 5.5rem;
+}
+
+.heading-primary {
+  font-size: 2.5rem;
 }
 
 .image-1 {
