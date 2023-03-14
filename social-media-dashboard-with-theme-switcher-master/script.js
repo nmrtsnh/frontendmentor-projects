@@ -1,5 +1,4 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
-let topBg = document.querySelector(".top-bg");
 
 //Switch Theme
 function switchTheme(event) {
