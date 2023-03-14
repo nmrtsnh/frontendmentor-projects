@@ -1,26 +1,15 @@
-// function myFunction() {
-//   console.log();
-//   var element = document.getElementById("change-please");
-//   element.classList.toggle("dark-mode");
-// }
+const toggleSwitch = document.querySelector('input[type="checkbox"]');
+let topBg = document.querySelector(".top-bg");
 
-// function myFunction() {
-//   console.log();
-//   var element = document.querySelector("main");
-//   element.classList.toggle("light-mode");
-// }
+//Switch Theme
+function switchTheme(event) {
+  console.log(event.target.checked);
 
-const toggleButton = document.querySelector(".switch");
-const main = document.querySelector(".main");
-
-// const main = document.querySelector("main");
-// const primaryHeader = document.querySelector("primary-heading");
-// const cardDashboard = document.querySelectorAll("card-dashboard");
-// const cardOverview = document.querySelectorAll("card-overview");
-// const numFollowers = document.querySelectorAll("num-followers");
-// const currentStats = document.querySelectorAll("current-stats");
-
-toggleButton.addEventListener("click", () => {
-  console.log("click");
-  main.classList.add("dark-theme");
-});
+  if (event.target.checked) {
+    document.documentElement.setAttribute("data-theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+}
+//Event Listener
+toggleSwitch.addEventListener("click", switchTheme);

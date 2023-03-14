@@ -12,14 +12,43 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(228, 34%, 66%);
+  --background: hsl(230, 17%, 14%);
+  --background-card: hsl(228, 28%, 20%);
+  --background-top-pattern: hsl(232, 19%, 15%);
+}
+
+[data-theme="light"] {
+  --primary-color: hsl(230, 17%, 14%);
+  --secondary-color: hsl(228, 12%, 44%);
+  --background: hsl(0, 0%, 100%);
+  --background-card: hsl(227, 47%, 96%);
+  --background-top-pattern: hsl(225, 100%, 98%);
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
 
 .main {
-  background-color: hsl(230, 17%, 14%);
+  background-color: var(--background);
   min-height: 100vh;
   padding: 50px 120px;
+}
+
+.top-bg {
+  content: "";
+  background: var(--background-top-pattern);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 77%;
+  z-index: -1;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .header {
@@ -27,16 +56,15 @@ body {
   justify-content: space-between;
 }
 
-.header-container-left {
-  color: hsl(0, 0%, 100%);
-}
 .primary-heading {
   font-size: 30px;
   font-weight: 400;
+  color: var(--primary-color);
 }
+
 .text {
   font-size: 15px;
-  color: hsl(228, 34%, 66%);
+  color: var(--secondary-color);
 }
 
 .header-container-right {
@@ -81,7 +109,7 @@ body {
   content: "";
   height: 15px;
   width: 15px;
-  background-color: hsl(230, 17%, 14%);
+  background-color: var(--background);
   transition: 0.4s;
   margin-top: 2px;
   margin-left: 2px;
@@ -95,7 +123,7 @@ body {
   /* gap: 30px; */
 }
 .card-dashboard {
-  background-color: hsl(228, 28%, 20%);
+  background-color: var(--background-card);
   width: 100%;
   max-width: 270px;
   height: 210px;
@@ -133,7 +161,7 @@ body {
 
 .social-handle {
   text-decoration: none;
-  color: hsl(228, 34%, 66%);
+  color: var(--secondary-color);
   font-size: 14px;
   margin-left: 5px;
 }
@@ -145,7 +173,7 @@ body {
 
 .num-followers {
   font-size: 55px;
-  color: hsl(0, 0%, 100%);
+  color: var(--primary-color);
   font-weight: 400;
 }
 
@@ -177,11 +205,7 @@ body {
 .overview-heading {
   margin-top: 40px;
 }
-.secondary-heading {
-  color: hsl(0, 0%, 100%);
-  font-size: 30px;
-  font-weight: 400;
-}
+
 .section-overview {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -202,7 +226,7 @@ body {
 
 .card-overview {
   padding: 20px;
-  background-color: hsl(228, 28%, 20%);
+  background-color: var(--background-card);
   width: 100%;
   max-width: 270px;
   height: 140px;
@@ -211,11 +235,6 @@ body {
 
 .current-stats {
   font-size: 30px;
-  color: hsl(0, 0%, 100%);
+  color: var(--primary-color);
   font-weight: 400;
-}
-
-.dark-theme {
-  background-color: hsl(0, 0%, 100%);
-  color: black;
 }
