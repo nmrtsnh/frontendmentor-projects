@@ -21,9 +21,10 @@ body {
 header {
   background-image: url("images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
   width: 100%;
-  background-size: contain;
-  min-height: 80vh;
+  background-size: cover;
+  min-height: 100vh;
   margin-bottom: 6.5rem;
 }
 
