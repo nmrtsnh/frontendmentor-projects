@@ -64,35 +64,56 @@
             id="card-number"
             placeholder="e.g 1234 5678 9123 0000"
           />
-          <div class="form-imp-details">
-            <label class="cardholder" for="number"
-              >ex.date(mm/yy)
-              <div class="expiry-date">
-                <input
-                  class="expiry-details"
-                  type="number"
-                  id="expiry-date-month"
-                  placeholder="MM"
-                />
-                <input
-                  class="expiry-details"
-                  type="number"
-                  id="expiry-date-year"
-                  placeholder="YY"
-                />
-              </div>
-            </label>
+          <div class="alert" id="alert2"></div>
 
-            <label class="cardholder cvc-margin" for="number"
-              >cvc<input
+          <div class="input-bottom">
+            <div class="form-imp-details">
+              <p class="cardholder">ex.date(mm/yy)</p>
+
+              <div class="expiry-date">
+                <div>
+                  <input
+                    class="expiry-details"
+                    type="number"
+                    id="mm"
+                    placeholder="MM"
+                  />
+                  <div class="alert" id="alert3"></div>
+                </div>
+                <div>
+                  <input
+                    class="expiry-details"
+                    type="number"
+                    id="yy"
+                    placeholder="YY"
+                  />
+                  <div class="alert" id="alert4"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cvc">
+              <p class="cardholder cvc-margin">cvc</p>
+              <input
                 class="cvc-details"
                 type="number"
                 id="cvc"
                 placeholder="e.g. 123"
               />
-            </label>
+              <div class="alert" id="alert5"></div>
+            </div>
           </div>
         </form>
+        <div class="thankyou-container">
+          <img class="complete-icon" src="images/icon-complete.svg" />
+          <div class="thankyou-details">
+            <h1 class="thankyou-title">Thank you</h1>
+            <p class="thank you-text">We've added your card details</p>
+          </div>
+          <div class="buton">
+            <button type="button" class="continue-btn">Continue</button>
+          </div>
+        </div>
         <div class="button">
           <button class="confirm-button" type="button">Confirm</button>
         </div>

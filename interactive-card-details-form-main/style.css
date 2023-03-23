@@ -128,7 +128,7 @@ main {
 }
 
 .form-imp-details {
-  display: flex;
+  /* display: flex; */
   /* justify-content: space-between; */
 }
 #cvc {
@@ -192,4 +192,23 @@ body:after {
   left: 0;
 
   z-index: -100;
+}
+
+.alert {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: hsl(0, 100%, 66%);
+}
+
+.input-bottom {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  gap: 10px;
+}
+
+.expiry-date {
+  display: flex;
+  gap: 10px;
 }
