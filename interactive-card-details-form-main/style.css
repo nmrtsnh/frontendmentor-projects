@@ -212,3 +212,33 @@ body:after {
   display: flex;
   gap: 10px;
 }
+
+.thankyou-container {
+  text-align: center;
+  display: none;
+}
+
+.thankyou-image {
+  width: 70px;
+  margin-bottom: 30px;
+}
+
+.thankyou-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: hsl(278, 68%, 11%);
+  margin-bottom: 0;
+}
+
+.thankyou-text {
+  font-size: 1rem;
+  color: hsl(279, 6%, 55%);
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.continue-button {
+  padding: 15px 100px;
+}
