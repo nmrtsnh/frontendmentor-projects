@@ -59,6 +59,11 @@ body {
   margin-top: 20px;
 }
 
+.noti-unread {
+  background-color: hsl(211, 68%, 94%);
+  border-radius: 10px;
+}
+
 .profile-img {
   width: 45px;
   margin-right: 20px;
@@ -84,14 +89,6 @@ body {
   font-weight: 800;
   margin-left: 5px;
 }
-.chess-club-link {
-  color: hsl(219, 85%, 26%);
-}
-
-.noti-unread {
-  background-color: hsl(211, 68%, 94%);
-  border-radius: 10px;
-}
 
 .red-dot {
   width: 0.6rem;
@@ -103,15 +100,6 @@ body {
   display: inline-block;
   transform: translateY(40%);
 }
-/* .noti-unread::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  background-color: hsl(1, 90%, 64%);
-  margin-top: 8px;
-  margin-left: 5px;
-} */
 
 .noti-time {
   color: hsl(219, 14%, 63%);
@@ -130,11 +118,16 @@ body {
   letter-spacing: 0.01rem;
   border-radius: 5px;
 }
+
 .picture {
   margin-left: auto;
 }
 .picture img {
   width: 50px;
+}
+
+.chess-club-link {
+  color: hsl(219, 85%, 26%);
 }
 
 @media only screen and (max-width: 700px) {

@@ -19,5 +19,5 @@ markAllRead.addEventListener("click", function () {
 
   dot1.classList.remove("red-dot");
   dot2.classList.remove("red-dot");
-  dot2.classList.remove("red-dot");
+  dot3.classList.remove("red-dot");
 });
