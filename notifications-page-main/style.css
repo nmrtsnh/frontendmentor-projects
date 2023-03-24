@@ -90,11 +90,21 @@ body {
 }
 
 .noti-unread {
-  background-color: hsl(210, 60%, 98%);
+  background-color: hsl(211, 68%, 94%);
   border-radius: 10px;
 }
 
-.noti-unread::after {
+.red-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50px;
+  background-color: hsl(1, 90%, 64%);
+  color: hsl(1, 90%, 64%);
+  margin: 0.5rem;
+  display: inline-block;
+  transform: translateY(40%);
+}
+/* .noti-unread::after {
   content: "";
   width: 8px;
   height: 8px;
@@ -102,7 +112,7 @@ body {
   background-color: hsl(1, 90%, 64%);
   margin-top: 8px;
   margin-left: 5px;
-}
+} */
 
 .noti-time {
   color: hsl(219, 14%, 63%);

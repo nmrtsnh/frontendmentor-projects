@@ -31,7 +31,7 @@
       </header>
       <main>
         <div class="noti-details">
-          <div class="noti noti-unread">
+          <div class="noti noti-unread" id="noti-1">
             <img
               class="profile-img"
               src="assets/images/avatar-mark-webber.webp"
@@ -40,12 +40,14 @@
               <p class="profile-noti">
                 <a class="profile-name" href="">Mark Webber</a
                 ><span> reacted to your recent post </span
-                ><a class="noti-link" href="#">My first tournament today!</a>
+                ><a class="noti-link" href="#">My first tournament today!</a
+                ><span class="red-dot" id="dot-1"></span>
               </p>
+
               <span class="noti-time">1m ago</span>
             </div>
           </div>
-          <div class="noti noti-unread">
+          <div class="noti noti-unread" id="noti-2">
             <img
               class="profile-img"
               src="assets/images/avatar-angela-gray.webp"
@@ -53,11 +55,12 @@
             <div class="noti-box">
               <p class="profile-noti">
                 <a class="profile-name" href="">Angela Gray</a> followed you
+                <span class="red-dot" id="dot-2"></span>
               </p>
               <span class="noti-time">5m ago</span>
             </div>
           </div>
-          <div class="noti noti-unread">
+          <div class="noti noti-unread" id="noti-3">
             <img
               class="profile-img"
               src="assets/images/avatar-jacob-thompson.webp"
@@ -66,7 +69,8 @@
               <p class="profile-noti">
                 <a class="profile-name" href="">Jacob Thompson</a
                 ><span> has joined your group </span
-                ><a class="noti-link chess-club-link" href="#">Chess Club!</a>
+                ><a class="noti-link chess-club-link" href="#">Chess Club!</a
+                ><span class="red-dot" id="dot-3"></span>
               </p>
               <span class="noti-time">1 day ago</span>
             </div>
@@ -154,5 +158,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Namrata Sinha</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
