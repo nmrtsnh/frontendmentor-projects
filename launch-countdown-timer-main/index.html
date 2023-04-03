@@ -1,31 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Launch countdown timer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
 
-  We're launching soon
+    <title>Frontend Mentor | Launch countdown timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>We're launching soon</h1>
+      <div class="timer">
+        <div class="days">
+          <div class="flip-card">
+            <div class="top-flip-card">86</div>
+            <div class="bottom-flip-card">86</div>
+          </div>
+          <p class="text">Days</p>
+        </div>
 
-  Days
-  Hours
-  Minutes
-  Seconds
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="hours">
+          <div class="flip-card">
+            <div class="top-flip-card">15</div>
+            <div class="bottom-flip-card">15</div>
+          </div>
+          <p class="text">Hours</p>
+        </div>
+
+        <div class="minutes">
+          <div class="flip-card">
+            <div class="top-flip-card">49</div>
+            <div class="bottom-flip-card">49</div>
+          </div>
+          <p class="text">Minutes</p>
+        </div>
+
+        <div class="seconds">
+          <div class="flip-card">
+            <div class="top-flip-card">57</div>
+            <div class="bottom-flip-card">57</div>
+          </div>
+          <p class="text">Seconds</p>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="images/pattern-hills.svg" />
+        <div class="social-links">
+          <img src="images/icon-facebook.svg" />
+          <img src="images/icon-pinterest.svg" />
+          <img src="images/icon-instagram.svg" />
+        </div>
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
