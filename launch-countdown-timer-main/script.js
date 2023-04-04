@@ -1,10 +1,7 @@
 const flipCards = document.querySelectorAll(".flip-card");
 const topFlipCard = document.querySelectorAll(".top-flip-card");
 const bottomFlipCard = document.querySelectorAll(".bottom-flip-card");
-const timerEl = document.getElementById("timer");
 const heading = document.getElementById("heading");
-
-var e = document.querySelectorAll(".flip-clock-pieces");
 
 const second = 1000;
 const minute = second * 60;
@@ -16,13 +13,13 @@ const day = hour * 24;
 const theBigDay = new Date().setHours(new Date().getHours() + 504);
 // const theBigDay = new Date().setMinutes(new Date().getMinutes() + 1);
 
-const countdownDate = new Date(theBigDay).getTime();
-
+const countdownDate = new Date(theBigDay);
+console.log(countdownDate);
 //Update the count down every 1 second
 
 const timer = setInterval(() => {
   //Get today's date and time
-  const currentDate = new Date().getTime();
+  const currentDate = new Date();
 
   //Find the distance between now and the count down date
   const distance = countdownDate - currentDate;
