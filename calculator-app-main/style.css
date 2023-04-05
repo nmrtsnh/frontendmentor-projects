@@ -5,6 +5,7 @@
 }
 
 html[data-theme="theme1"] {
+  /* Background Colors */
   --main-background: hsl(222, 26%, 31%);
   --toggle-keypad-background: hsl(223, 31%, 20%);
   --screen-background: hsl(224, 36%, 15%);
@@ -56,21 +57,11 @@ body {
   padding: 23px;
   width: 500px;
   margin-left: 32%;
-
-  /* text-align: center; */
-
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%;
-  transform: translate(-50%, 10%); */
 }
 .header {
   display: flex;
-
-  /* justify-content: center; */
   gap: 250px;
   margin-top: 80px;
-
   margin-bottom: 20px;
 }
 
@@ -112,12 +103,6 @@ body {
   border-radius: 10px;
 }
 
-/* .toggle input {
-  display: flex;
-  justify-content: space-evenly;
-  display: none;
-} */
-
 .toggle-label {
   width: 5px;
   border-radius: 50%;
@@ -139,36 +124,6 @@ body {
 
 .theme {
   display: none;
-  /* height: 15px;
-  width: 15px;
-  background-color: orange;
-  cursor: pointer;
-  border-radius: 10px;
-  appearance: none; */
-}
-
-/* .switch {
-  position: relative;
-  display: inline-block;
-  width: 70px;
-  height: 25px;
-}
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--toggle-keypad-background);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .slider:before {
@@ -178,19 +133,7 @@ body {
   width: 16px;
   left: 5px;
   bottom: 5px;
-  background-color: var(--key-background-toggle);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-} */
-
-/* .slider.round {
-  border-radius: 34px;
 }
-
-.slider.round:before {
-  border-radius: 50%;
-} */
-
 .display-container {
   background-color: var(--screen-background);
   margin-bottom: 20px;

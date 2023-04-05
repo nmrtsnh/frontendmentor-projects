@@ -11,9 +11,7 @@ const themeToggles = document.querySelectorAll("label");
 function toggleTheme(switchToTheme) {
   document.documentElement.setAttribute("data-theme", switchToTheme);
   // remove 'toggled-on' from all the labels
-  themeToggles.forEach((toggleTheme) =>
-    toggleTheme.classList.remove("toggled-on")
-  );
+  themeToggles.forEach((theme) => theme.classList.remove("toggled-on"));
 
   // add 'toggled-on' to the one desired label (themeToggles)
   switchToTheme === "theme1"
