@@ -46,30 +46,31 @@
         </div>
       </div>
 
-      <div class="display-container">
-        <p class="display-first-line">123=</p>
-        <p class="display-second-line">123</p>
+      <div class="display-container" id="display-container">
+        <p class="display-second-line" id="calculator-display">0</p>
       </div>
 
       <div class="calculator-wrapper">
-        <button class="calc-btn" type="button">7</button>
-        <button class="calc-btn" type="button">8</button>
-        <button class="calc-btn" type="button">9</button>
-        <button class="calc-btn del-btn" type="button">del</button>
-        <button class="calc-btn" type="button">4</button>
-        <button class="calc-btn" type="button">5</button>
-        <button class="calc-btn" type="button">6</button>
-        <button class="calc-btn operator" type="button">+</button>
-        <button class="calc-btn" type="button">1</button>
-        <button class="calc-btn" type="button">2</button>
-        <button class="calc-btn" type="button">3</button>
-        <button class="calc-btn operator" type="button">-</button>
-        <button class="calc-btn" id="clear-btn" type="button">.</button>
-        <button class="calc-btn" type="button">0</button>
-        <button class="calc-btn operator" type="button">/</button>
-        <button class="calc-btn operator" type="button">*</button>
-        <button class="calc-btn reset-btn" type="button">reset</button>
-        <button class="calc-btn equal-btn" type="button">=</button>
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button class="del-btn" value="del">del</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button class="operator" value="+">+</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button class="operator" value="-">-</button>
+        <button class="decimal" value=".">.</button>
+        <button value="0">0</button>
+        <button class="operator" value="/">/</button>
+        <button class="operator" value="*">*</button>
+        <button class="reset-btn operator" id="reset-btn" value="reset">
+          reset
+        </button>
+        <button class="equal-btn operator" value="=">=</button>
       </div>
     </main>
     <!-- <div class="attribution">
