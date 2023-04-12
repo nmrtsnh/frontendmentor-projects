@@ -67,6 +67,10 @@ input {
   position: absolute;
   top: 280px;
   left: 970px;
+  cursor: pointer;
+}
+.arrow-icon:hover {
+  background-color: hsl(0, 0%, 8%);
 }
 .container-2 span {
   color: hsl(259, 100%, 65%);
