@@ -294,6 +294,9 @@ main {
   cursor: pointer;
   text-align: center;
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .add-ons {
