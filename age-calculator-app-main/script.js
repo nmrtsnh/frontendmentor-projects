@@ -115,7 +115,13 @@ const getAge = function () {
     monthsField.textContent = month;
     daysField.textContent = day;
   }
+
+  inputDay = "";
+  inputMonth = "";
+  inputYear = "";
 };
+
+const clearInput = function () {};
 
 resultBtn.addEventListener("click", function () {
   getAge();
