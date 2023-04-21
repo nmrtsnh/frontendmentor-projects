@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/nmrtsnh/frontendmentor-projects/tree/main/age-calculator-app-main)
-- Live Site URL: [Add live site URL here](https://nmrtsnh.github.io/frontendmentor-projects/age-calculator-app-main/)
+- Solution URL: [Solution URL here](https://github.com/nmrtsnh/frontendmentor-projects/tree/main/age-calculator-app-main)
+- Live Site URL: [Live site URL here](https://nmrtsnh.github.io/frontendmentor-projects/age-calculator-app-main/)
 
 ## My process
 
