@@ -21,6 +21,7 @@
     <title>Frontend Mentor | [Blogr]</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -33,9 +34,11 @@
           <div class="header-links">
             <div class="product-links">
               <a class="open-dropdown" href="#"
-                >Product<img src="images/icon-arrow-light.svg"
+                >Product<img
+                  class="arrow-icon"
+                  src="images/icon-arrow-light.svg"
               /></a>
-              <div class="dropdown">
+              <div class="dropdown first-dropdown">
                 <ul class="dropdown-list">
                   <li><a href="#">Overview</a></li>
                   <li><a href="#">Pricing</a></li>
@@ -48,9 +51,11 @@
 
             <div class="product-links">
               <a class="open-dropdown" href="#"
-                >Company<img src="images/icon-arrow-light.svg"
+                >Company<img
+                  class="arrow-icon"
+                  src="images/icon-arrow-light.svg"
               /></a>
-              <div class="dropdown">
+              <div class="dropdown second-dropdown">
                 <ul class="dropdown-list">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Team</a></li>
@@ -62,9 +67,11 @@
 
             <div class="product-links">
               <a class="open-dropdown" href="#"
-                >Connect<img src="images/icon-arrow-light.svg"
+                >Connect<img
+                  class="arrow-icon"
+                  src="images/icon-arrow-light.svg"
               /></a>
-              <div class="dropdown">
+              <div class="dropdown third-dropdown">
                 <ul class="dropdown-list">
                   <li><a href="#">Contact</a></li>
                   <li><a href="#">Newsletter</a></li>
@@ -77,6 +84,67 @@
         <div class="header-right">
           <button class="login-btn" type="button">Login</button>
           <button class="signup-btn" type="button">Sign up</button>
+        </div>
+        <div class="mobile-nav">
+          <div class="menu-btn">
+            <div class="menu-btn-1"></div>
+            <div class="menu-icon"></div>
+            <div class="mob-nav-bar">
+              <div class="product-links mob-product-links">
+                <a class="open-dropdown" href="#"
+                  >Product<img
+                    class="arrow-icon"
+                    src="images/icon-arrow-dark.svg"
+                /></a>
+                <div class="dropdown first-dropdown">
+                  <ul class="dropdown-list">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Integrations</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="product-links mob-product-links">
+                <a class="open-dropdown" href="#"
+                  >Company<img
+                    class="arrow-icon"
+                    src="images/icon-arrow-dark.svg"
+                /></a>
+                <div class="dropdown second-dropdown">
+                  <ul class="dropdown-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="product-links mob-product-links">
+                <a class="open-dropdown" href="#"
+                  >Connect<img
+                    class="arrow-icon mob-arrow-icon"
+                    src="images/icon-arrow-dark.svg"
+                /></a>
+                <div class="dropdown third-dropdown">
+                  <ul class="dropdown-list">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mob-header-right">
+                <button class="login-btn mob-login-btn" type="button">
+                  Login
+                </button>
+                <button class="mob-signup-btn" type="button">Sign up</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -115,8 +183,13 @@
             </p>
           </div>
         </div>
+
         <div class="hero-img">
-          <img src="images/illustration-editor-desktop.svg" />
+          <img
+            class="desktop-img"
+            src="images/illustration-editor-desktop.svg"
+          />
+          <img class="mobile-img" src="images/illustration-editor-mobile.svg" />
         </div>
       </div>
     </section>
@@ -137,8 +210,12 @@
     </section>
 
     <section class="section-3">
-      <div class="desktop-img">
-        <img src="images/illustration-laptop-desktop.svg" />
+      <div class="hero-img-1">
+        <img
+          class="desktop-img-1"
+          src="images/illustration-laptop-desktop.svg"
+        />
+        <img class="mobile-img-1" src="images/illustration-laptop-mobile.svg" />
       </div>
       <div class="hero-content hero-content-section-3">
         <div class="card-1">
