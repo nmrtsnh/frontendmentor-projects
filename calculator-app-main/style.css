@@ -14,8 +14,9 @@ html[data-theme="theme1"] {
   --key-background-toggle: hsl(6, 63%, 50%);
   --key-background-light: hsl(30, 25%, 89%);
   --key-shadow-1: hsl(28, 16%, 65%);
-  --text-color: hsl(221, 14%, 31%);
-  --primary-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 100%);
+  --key-color: hsl(221, 14%, 31%);
+  /* --primary-color: hsl(221, 14%, 31%); */
 }
 
 html[data-theme="theme2"] {
@@ -25,10 +26,11 @@ html[data-theme="theme2"] {
   --key-background: hsl(185, 42%, 37%);
   --key-shadow: hsl(185, 58%, 25%);
   --key-background-toggle: hsl(25, 98%, 40%);
-  --key-background-light: hsl(25, 99%, 27%);
+  --key-background-light: hsl(30, 25%, 89%);
   --key-shadow-1: hsl(35, 11%, 61%);
   --text-color: hsl(60, 10%, 19%);
-  --primary-color: hsl(0, 0%, 100%);
+  /* --primary-color: black; */
+  --key-color: hsl(60, 10%, 19%);
 }
 
 html[data-theme="theme3"] {
@@ -40,8 +42,9 @@ html[data-theme="theme3"] {
   --key-background-toggle: hsl(176, 100%, 44%);
   --key-background-light: hsl(268, 47%, 21%);
   --key-shadow-1: hsl(290, 70%, 36%);
-  --text-color: hsl(hsl(52, 100%, 62%));
-  --primary-color: hsl(0, 0%, 100%);
+  --text-color: hsl(52, 100%, 62%);
+  /* --primary-color: hsl(0, 0%, 100%); */
+  --key-color: hsl(52, 100%, 62%);
 }
 
 body {
@@ -49,6 +52,7 @@ body {
   /* position: relative; */
   background-color: var(--main-background);
   /* min-height: 100vh; */
+  text-rendering: optimizeSpeed;
 }
 
 .calc {
@@ -68,12 +72,12 @@ body {
 .heading {
   font-size: 32px;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--text-color);
   letter-spacing: 0.01em;
 }
 
 .text {
-  color: var(--primary-color);
+  color: var(--text-color);
   text-transform: uppercase;
   margin-top: 8px;
   font-size: 14px;
@@ -85,6 +89,11 @@ body {
 
   font-size: 14px;
 }
+
+.number:last-child {
+  margin-right: auto;
+}
+
 .heading-wrapper {
   display: flex;
   gap: 15px;
@@ -109,7 +118,7 @@ body {
   opacity: 0;
   height: 15px;
   width: 15px;
-  background-color: orange;
+  background-color: var(--key-background-toggle);
   cursor: pointer;
   border-radius: 10px;
   appearance: none;
@@ -145,9 +154,9 @@ body {
   overflow-x: auto;
 }
 
-.display-second-line {
+.display-first-line {
   /* margin-right: auto; */
-  color: white;
+  color: var(--text-color);
   font-size: 50px;
   /* margin-top: auto; */
   padding-top: 20px;
@@ -156,6 +165,29 @@ body {
   /* margin-right: auto; */
   display: flex;
   justify-content: flex-end;
+
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.display-second-line {
+  /* margin-right: auto; */
+  color: var(--text-color);
+  font-size: 50px;
+  /* margin-top: auto; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  /* margin-right: auto; */
+  display: flex;
+  justify-content: flex-end;
+
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 /* Custom Scrollbar */
 
@@ -197,7 +229,7 @@ button {
   background-color: var(--key-background-light);
   border: none;
   box-shadow: 0 4px var(--key-shadow-1);
-  color: var(--text-color);
+  color: var(--key-color);
 }
 
 .del-btn {
@@ -229,4 +261,31 @@ button {
 }
 .attribution a {
   color: hsl(253, 31%, 94%);
+}
+
+@media (max-width: 768px) {
+  .calc {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    gap: 120px;
+  }
+
+  .calculator-wrapper {
+    width: 70%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .display-container {
+    width: 70%;
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
 }
