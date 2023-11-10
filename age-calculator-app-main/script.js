@@ -78,9 +78,9 @@ const errorField = function () {
 };
 
 const getAge = function () {
-  const inputDay = parseInt(dayInput.value);
-  const inputMonth = parseInt(monthInput.value);
-  const inputYear = parseInt(yearInput.value);
+  let inputDay = parseInt(dayInput.value);
+  let inputMonth = parseInt(monthInput.value);
+  let inputYear = parseInt(yearInput.value);
 
   if (inputYear % 4 === 0) {
     if (inputYear % 100 === 0) {

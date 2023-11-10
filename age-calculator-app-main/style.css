@@ -9,6 +9,7 @@ body {
   background-color: hsl(0, 0%, 94%);
   margin: 0 auto;
   width: 50vw;
+  /* min-width: 500px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,7 +17,9 @@ body {
 
 main {
   background-color: hsl(0, 0%, 100%);
-  height: 550px;
+  width: 100%;
+  max-width: 1600px;
+  /* height: 550px; */
   margin-top: 100px;
   padding-top: 40px;
   padding-left: 50px;
@@ -27,14 +30,22 @@ main {
 
 .container-1 {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin-left: 10rem;
+  margin-right: 10rem; */
   margin-bottom: 40px;
-  gap: 130px;
+  gap: 45px;
   padding-bottom: 80px;
   border-bottom: 1px solid hsl(0, 0%, 86%);
+
+  position: relative;
 }
 
 .date-card {
-  width: 84px;
+  width: calc((100% - 90px) / 3);
+  /* width: 80%; */
+  /* width: 6%; */
 }
 .label {
   font-size: 12px;
@@ -46,7 +57,8 @@ main {
 
 .input {
   width: 150px;
-  height: 60px;
+  min-width: 60px;
+  height: 80%;
   border-radius: 10px;
   outline: none;
   border: 1px solid hsl(0, 0%, 86%);
@@ -61,12 +73,16 @@ main {
   padding: 16px;
   border-radius: 50px;
   position: absolute;
-  top: 280px;
-  left: 970px;
+  top: 75%;
+  left: 90%;
   cursor: pointer;
 }
 .arrow-icon:hover {
   background-color: hsl(0, 0%, 8%);
+}
+
+.container-2 {
+  width: 110%;
 }
 .container-2 span {
   color: hsl(259, 100%, 65%);
@@ -76,9 +92,13 @@ main {
 .age {
   font-size: 70px;
   font-weight: 800;
+  margin: 0;
   font-style: italic;
   line-height: 1.1;
 }
+/* .months {
+  font-size: inherit;
+} */
 
 .error-msg {
   color: hsl(0, 100%, 67%);
@@ -98,31 +118,44 @@ footer {
   margin-top: 50px;
 }
 
-@media (min-width: 311px) and (max-width: 864px) {
+@media (min-width: 865px) and (max-width: 1148px) {
+  .input {
+    width: 100px;
+    min-width: 60px;
+  }
+  .container-2 {
+    width: 140%;
+  }
+}
+
+@media (min-width: 311px) and (max-width: 865px) {
   body {
     min-width: 90vw;
-    height: 75vh;
+    height: 90vh;
   }
   .container-1 {
-    display: flex;
-
     margin-bottom: 40px;
     gap: 18px;
     padding-bottom: 80px;
     border-bottom: 1px solid hsl(0, 0%, 86%);
   }
+  .container-2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
   .input {
-    width: 90%;
-    font-size: 20px;
+    width: 50%;
+    min-width: 100%;
   }
   .img {
     top: 32%;
     left: 40%;
   }
   .age {
-    font-size: 40px;
+    font-size: 50px;
   }
   .arrow-icon {
-    left: 44%;
+    top: 75%;
+    left: 35%;
   }
 }
