@@ -9,6 +9,15 @@
   color: hsl(228, 45%, 44%);
 }
 
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --gray-cyan: hsl(184, 14%, 56%);
+  --light-gray-cyan: hsl(185, 41%, 84%);
+  --very-light-gray-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
 body {
   font-family: "Space Mono", sans-serif;
 }
@@ -20,34 +29,38 @@ body {
 }
 
 main {
-  background-color: hsl(185, 41%, 84%);
+  background-color: var(--light-gray-cyan);
   min-height: 100vh;
-  position: relative;
+  /* position: relative; */
 }
 
 .container {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   display: flex;
   width: 100%;
   max-width: 700px;
   height: 350px;
   text-align: center;
   justify-content: center;
-  position: absolute;
+
+  margin: 0 auto;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   border-radius: 10px;
 }
 
 .heading {
   padding-top: 90px;
-  color: hsl(183, 100%, 15%);
+  color: var(--very-dark-cyan);
   font-size: 10px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-weight: lighter;
+
+  margin-bottom: 5rem;
 }
 .card-1 {
   margin-right: auto;
@@ -76,7 +89,7 @@ main {
   margin-bottom: 20px;
   border: none;
   border-radius: 5px;
-  background-color: hsl(189, 41%, 97%);
+  background-color: var(--very-light-gray-cyan);
   text-align: right;
   padding-right: 10px;
   font-size: 24px;
@@ -84,7 +97,7 @@ main {
   cursor: pointer;
 }
 .input:hover {
-  border: 2px solid hsl(172, 67%, 45%);
+  border: 2px solid var(--strong-cyan);
 }
 .percent {
   display: grid;
@@ -95,8 +108,8 @@ main {
 }
 
 .tip-percent {
-  background-color: hsl(183, 100%, 15%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
   font-size: 17px;
   padding: 10px 20px;
   text-align: center;
@@ -107,48 +120,51 @@ main {
 }
 
 .tip-percent:hover {
-  background-color: hsl(185, 41%, 84%);
+  background-color: var(--light-gray-cyan);
   color: black;
 }
 
 .custom-percent {
-  background-color: hsl(189, 41%, 97%);
+  background-color: var(--very-light-gray-cyan);
   color: black;
 }
 
 .custom-percent:hover {
-  border: 2px solid hsl(172, 67%, 45%);
+  border: 2px solid var(--strong-cyan);
 }
 .total-people {
   position: relative;
 }
 .card-2 {
-  background-color: hsl(183, 100%, 15%);
+  background-color: var(--very-dark-cyan);
   width: 350px;
   margin: 20px;
   border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .tip-amount {
   padding-top: 40px;
   margin-bottom: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tip-amount-text {
-  color: hsl(0, 0%, 100%);
-  font-size: 12px;
-  width: 60px;
+  color: var(--white);
+  font-size: 1rem;
+  /* width: 60px; */
   text-align: left;
 }
 
 .text-2 {
-  color: hsl(184, 14%, 56%);
+  color: var(--gray-cyan);
   font-size: 10px;
 }
 .tip-amount-total {
-  color: hsl(172, 67%, 45%);
+  color: var(--strong-cyan);
   font-size: 30px;
 }
 
@@ -162,7 +178,7 @@ main {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: hsl(172, 67%, 45%);
+  background-color: var(--strong-cyan);
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -172,6 +188,66 @@ main {
 }
 
 .reset-button:hover {
-  background-color: hsl(189, 41%, 97%);
+  background-color: var(--very-light-gray-cyan);
   opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    margin-bottom: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 400px;
+    height: 100%;
+
+    /* width: 100%; */
+  }
+
+  .card-2 {
+    padding-bottom: 2rem;
+    margin-top: 0;
+  }
+
+  .reset-button {
+    margin-top: 0;
+  }
+  /* .tip-amount-text {
+    font-size: 1rem;
+  } */
+}
+
+@media (max-width: 400px) {
+  .card-1 {
+    /* width: 250px; */
+    /* padding-left: 1.5rem; */
+  }
+
+  .input {
+    width: 100%;
+  }
+  .percent {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .tip-percent {
+    /* width: 120px; */
+    padding: 20px 30px;
+  }
+
+  .card-2 {
+    /* width: 320px; */
+    padding-bottom: 2rem;
+  }
+
+  .tip-amount-text {
+    font-size: 1.2em;
+  }
+
+  .tip-percent {
+    font-size: 20px;
+  }
 }
