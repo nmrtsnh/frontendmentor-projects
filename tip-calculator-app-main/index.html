@@ -33,7 +33,13 @@
           <div class="total-bill-amount">
             <p class="item">Bill</p>
             <img class="icon" src="images/icon-dollar.svg" />
-            <input type="text" id="bill-total" class="input" placeholder="0" />
+            <input
+              type="text"
+              id="bill-total"
+              class="input"
+              placeholder="0"
+              maxlength="6"
+            />
           </div>
           <div class="tip-calc">
             <p class="item">Select tip %</p>
@@ -43,9 +49,7 @@
               <button class="tip-percent" type="button">15%</button>
               <button class="tip-percent" type="button">25%</button>
               <button class="tip-percent" type="button">50%</button>
-              <button class="tip-percent custom-percent" type="button">
-                Custom
-              </button>
+              <input class="input input-custom" placeholder="custom" />
             </div>
             <div class="total-people">
               <p class="item">Number of People</p>

@@ -99,6 +99,11 @@ main {
 .input:hover {
   border: 2px solid var(--strong-cyan);
 }
+.input-custom {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
 .percent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -168,6 +173,19 @@ main {
   font-size: 30px;
 }
 
+.tip-amount-total,
+.total-person-amount {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tip-amount-total span,
+.total-person-amount span {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .total-person-amount {
   margin-top: -50px;
 }
@@ -188,7 +206,7 @@ main {
 }
 
 .reset-button:hover {
-  background-color: var(--very-light-gray-cyan);
+  background-color: var(--light-gray-cyan);
   opacity: 1;
 }
 
