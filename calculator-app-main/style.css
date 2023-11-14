@@ -56,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 23px;
-  width: 500px;
+  width: clamp(300px, 50%, 500px);
   margin-left: 32%;
 }
 .header {
@@ -137,28 +137,17 @@ body {
   overflow-x: auto;
 }
 
-.display-first-line {
-  display: flex;
-  justify-content: flex-end;
-  color: var(--text-color);
-  font-size: 50px;
-  padding: 20px;
-  max-width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
+.display-first-line,
 .display-second-line {
   display: flex;
   justify-content: flex-end;
   color: var(--text-color);
-  font-size: 50px;
   padding: 20px;
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: clamp(24px, 4vw, 50px);
 }
 
 ::-webkit-scrollbar {
