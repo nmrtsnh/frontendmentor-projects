@@ -14,6 +14,7 @@ function sendNumberValue(number) {
     awaitingNextValue = false;
   } else {
     // If current display value is 0, replace it, if not add number
+
     const displayValue = calcDisplay.textContent;
     if (displayValue.length < 10) {
       calcDisplay.textContent =
