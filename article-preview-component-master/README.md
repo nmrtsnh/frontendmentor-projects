@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://nmrtsnh.github.io/frontendmentor-projects/article-preview-component-master/)
+- Solution URL: (https://github.com/nmrtsnh/frontendmentor-projects/tree/main/article-preview-component-master)
+- Live Site URL:(https://nmrtsnh.github.io/frontendmentor-projects/article-preview-component-master/)
 
 ### Built with
 
