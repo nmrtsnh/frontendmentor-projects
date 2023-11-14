@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./screenshot.jpg" />
+<img src=".images/screenshot.jpg" />
 
 ### Links
 
