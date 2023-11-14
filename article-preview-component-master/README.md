@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src=".images/screenshot.jpg" />
+![Article Preview Component](./images/screenshot.jpg)
 
 ### Links
 
