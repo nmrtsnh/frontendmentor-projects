@@ -39,7 +39,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
 }
 
 .container {
@@ -202,5 +202,6 @@ main {
     flex-direction: column;
     width: 100%;
     margin-right: 0;
+    margin-bottom: 2rem;
   }
 }
