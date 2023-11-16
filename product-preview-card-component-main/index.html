@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product preview card component</title>
 
-  Perfume
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="card-1">
+          <img
+            class="card-1-image-desktop"
+            src="./images/image-product-desktop.jpg"
+            alt="Perfume Desktop Image"
+          />
+          <img
+            class="card-1-image-mobile"
+            src="./images/image-product-mobile.jpg"
+            alt="Perfume Mobile Image"
+          />
+        </div>
+        <div class="card-2">
+          <p class="text">Perfume</p>
+          <h1 class="heading-1">Gabrielle Essence Eau De Parfum</h1>
+          <span class="description"
+            >A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.</span
+          >
 
-  Gabrielle Essence Eau De Parfum
+          <div class="card-2-price">
+            <span class="offer-price">$149.99</span>
+            <span class="original-price">$169.99</span>
+          </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+          <button class="button">
+            <img
+              class="icon-btn"
+              src="./images/icon-cart.svg"
+              alt="Cart Icon"
+            />Add to Cart
+          </button>
+        </div>
+      </div>
+    </main>
 
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Namrata Sinha</a>.
+      </div>
+    </footer>
+  </body>
 </html>
