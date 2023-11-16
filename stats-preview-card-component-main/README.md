@@ -19,8 +19,6 @@ Users should be able to:
 - Solution URL: https://github.com/nmrtsnh/frontendmentor-projects/tree/main/stats-preview-card-component-main
 - Live Site URL: https://nmrtsnh.github.io/frontendmentor-projects/stats-preview-card-component-main/
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
