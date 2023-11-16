@@ -147,7 +147,7 @@ main {
 
 footer {
   margin-top: -20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .attribution {
@@ -159,12 +159,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--color-pale-blue);
+  }
   .card {
     max-width: 400px;
     margin-top: 50px;
-  }
-
-  footer {
-    margin-top: 20px;
   }
 }
