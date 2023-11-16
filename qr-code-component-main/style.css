@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 :root {
   --color-white: hsl(0, 0%, 100%);
   --color-light-gray: hsl(212, 45%, 89%);
@@ -15,6 +7,70 @@
   --color-dark-blue: hsl(218, 44%, 22%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--color-light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  max-width: 80%;
+  width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.qr-code-img {
+  width: 260px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-2 {
+  text-align: center;
+}
+
+.heading-1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  margin-bottom: 10px;
+  white-space: pre-line;
+}
+
+.description {
+  color: var(--color-grayish-blue);
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  margin-top: 50px;
 }
