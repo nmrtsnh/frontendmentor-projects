@@ -249,6 +249,7 @@ main {
   padding: 5px 8px;
   border-radius: 50%;
   font-size: 10px;
+  cursor: pointer;
 }
 
 .card-2 {
