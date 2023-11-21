@@ -1,51 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/e697ca5f43.js"
+      crossorigin="anonymous"
+    ></script>
 
-  Samuel Green
-  Available to Walk
+    <title>Frontend Mentor | [Chat App Css Illustration]</title>
 
-  That sounds great. I’d be happy with that.
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="background-1"></div>
+      <div class="card-1">
+        <div class="card-1-mobile">
+          <div class="mobile-header">
+            <div class="user">
+              <i class="fa-solid fa-chevron-left icon-left"></i>
 
-  Could you send over some pictures of your dog, please?
+              <img class="avatar" src="images/avatar.jpg" alt="Samuel Green" />
 
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+              <div class="user-details">
+                <span class="user-name">Samuel Green</span>
+                <span class="user-availablity">Available to walk</span>
+              </div>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical icon-dot"></i>
+          </div>
+          <div class="mobile-msg">
+            <div class="msg-box-left">
+              <span class="msg-1"
+                >That sounds great. I’d be happy with that.</span
+              >
+              <span class="msg-2"
+                >Could you send over some pictures of your dog, please?</span
+              >
+            </div>
+            <div class="dog-img">
+              <img class="dog-img-1" src="images/dog-image-1.jpg" />
+              <img class="dog-img-2" src="images/dog-image-2.jpg" />
+              <img class="dog-img-3" src="images/dog-image-3.jpg" />
+            </div>
+            <div class="msg-box-right">
+              <div class="msg-right">
+                <span class="msg-3"
+                  >Here are a few pictures. She’s a happy girl!</span
+                >
+                <span class="msg-4">Can you make it?</span>
+              </div>
+            </div>
+            <div class="msg-box-left">
+              <span class="msg-5"
+                >She looks so happy! The time we discussed works. How long shall
+                I take her out for?</span
+              >
+              <div class="price-card">
+                <div class="price-1">
+                  <div class="price-details">
+                    <i class="fa-regular fa-circle icon-circle"></i>
+                    <span class="duration">30 minute walk</span>
+                  </div>
+                  <span class="amount">$29</span>
+                </div>
+                <div class="price-2">
+                  <div class="price-details">
+                    <i class="fa-regular fa-circle icon-circle"></i>
+                    <span class="duration">1 hour walk</span>
+                  </div>
+                  <span class="amount">$49</span>
+                </div>
+              </div>
+            </div>
+            <div class="submit-btn">
+              <input
+                class="input"
+                type="text"
+                placeholder="Type a message..."
+              />
+              <button class="button">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-2">
+        <h1 class="heading-1">Simple booking</h1>
+        <p class="description">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+      <div class="background-2"></div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Namrata Sinha</a>.
+      </div>
+    </footer>
+  </body>
 </html>
