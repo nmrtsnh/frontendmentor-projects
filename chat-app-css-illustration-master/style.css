@@ -128,7 +128,7 @@ main {
   font-weight: 500;
 }
 
-.user-availablity {
+.user-availability {
   color: var(--color-white);
   opacity: 0.4;
   font-size: 12px;
@@ -136,8 +136,6 @@ main {
 
 .mobile-msg {
   padding: 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 .msg-box-left {
@@ -161,8 +159,6 @@ main {
 .msg-box-right {
   margin-bottom: 10px;
   color: var(--color-chat-right);
-
-  align-items: flex-end;
 }
 
 .msg-3,
@@ -177,7 +173,6 @@ main {
 
 .msg-4 {
   width: 120px;
-  align-self: flex-end;
 }
 
 .dog-img {
@@ -190,9 +185,8 @@ main {
 .msg-right {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+
   gap: 10px;
-  /* margin-top: 10px; */
 }
 
 .dog-img-1,
@@ -291,9 +285,6 @@ main {
   opacity: 0.1;
 }
 
-footer {
-  padding-bottom: 50px;
-}
 .attribution {
   text-align: center;
 }
@@ -303,7 +294,6 @@ footer {
 
 @media (max-width: 900px) {
   main {
-    display: flex;
     flex-direction: column;
     gap: 80px;
     align-items: center;
