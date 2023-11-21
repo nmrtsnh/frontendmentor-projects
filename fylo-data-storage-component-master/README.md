@@ -12,12 +12,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Fylo Data Storage Component](./screenshot.jpg)
+![Fylo Data Storage Component](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/nmrtsnh/frontendmentor-projects/tree/main/fylo-data-storage-component-master
+- Live Site URL: https://nmrtsnh.github.io/frontendmentor-projects/fylo-data-storage-component-master/
 
 ## My process
 
@@ -26,10 +26,4 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
