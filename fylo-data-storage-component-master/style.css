@@ -143,14 +143,13 @@ main {
   justify-content: space-between;
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
+@keyframes moveUpDown {
+  0%,
+  100% {
     transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
@@ -163,7 +162,7 @@ main {
   position: absolute;
   top: -40px;
   right: 40px;
-  animation: slideUp 0.5s ease-out forwards;
+  animation: moveUpDown 2s ease-in-out infinite;
 }
 
 .storage-display p {
