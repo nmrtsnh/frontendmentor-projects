@@ -36,6 +36,7 @@ main {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  max-width: 1700px;
 }
 
 .container-details {
