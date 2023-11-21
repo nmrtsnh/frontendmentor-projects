@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Single Price Grid Component](./screenshot.jpg)
+![Single Price Grid Component](./images/screenshot.png)
 
 ### Links
 
