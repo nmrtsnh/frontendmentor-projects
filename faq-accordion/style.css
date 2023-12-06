@@ -67,14 +67,15 @@ body {
   justify-content: space-between;
 }
 
-.heading-3 {
+.heading-2 {
+  font-size: 1.1rem;
   color: var(--color-dark-purple);
   font-weight: 600;
   margin-bottom: 2rem;
   transition: color 0.3s ease;
 }
 
-.heading-3:hover {
+.heading-2:hover {
   color: hsl(293, 73%, 56%);
 }
 
