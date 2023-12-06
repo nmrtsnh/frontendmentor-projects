@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/nmrtsnh/frontendmentor-projects/tree/main/huddle-landing-page-with-alternating-feature-blocks-master)
-- Live Site URL: (https://nmrtsnh.github.io/frontendmentor-projects/huddle-landing-page-with-alternating-feature-blocks-master/)
+- Solution URL: (https://github.com/nmrtsnh/frontendmentor-projects/tree/main/huddle-landing-page-with-alternating-feature-blocks)
+- Live Site URL: (https://nmrtsnh.github.io/frontendmentor-projects/huddle-landing-page-with-alternating-feature-blocks/)
 
 ### Built with
 
