@@ -1,0 +1,162 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --color-intro-sign-up-bg: hsl(217, 28%, 15%);
+  --color-main-bg: hsl(218, 28%, 13%);
+  --color-footer-bg: hsl(216, 53%, 9%);
+  --color-testimonial-bg: hsl(219, 30%, 18%);
+
+  --color-cyan-cta-gradient: hsl(176, 68%, 64%);
+  --color-blue-cta-gradient: hsl(198, 60%, 50%);
+  --color-error: hsl(0, 100%, 63%);
+
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-main-bg);
+  color: var(--color-white);
+}
+
+.header {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-list a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+}
+
+.intro-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+  margin-bottom: 2rem;
+}
+
+.heading-1 {
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
+
+.description {
+  color: #c8c5c5;
+  margin-bottom: 30px;
+  padding-left: 28rem;
+  padding-right: 28rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.get-started-btn {
+  background: linear-gradient(
+    to right,
+    var(--color-cyan-cta-gradient),
+    var(--color-blue-cta-gradient)
+  );
+  color: var(--color-white);
+  padding: 10px 60px;
+
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background: linear-gradient(
+    to right,
+    var(--color-blue-cta-gradient),
+    var(--color-cyan-cta-gradient)
+  );
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two columns for the cards */
+  gap: 30px; /* Add some spacing between cards */
+  padding: 60px; /* Adjust padding for spacing */
+}
+
+/* Style the individual cards */
+.card {
+  border-radius: 8px; /* Add some border-radius for rounded corners */
+  padding: 20px; /* Add padding to the cards */
+  text-align: center;
+}
+
+/* Style card images */
+.card img {
+  width: 50px; /* Set the width of the card images */
+}
+
+/* Style heading-2 in the cards */
+.card .heading-2 {
+  font-size: 1.5rem;
+  margin-top: 15px; /* Add spacing between image and heading */
+}
+
+/* Style text in the cards */
+.card .text {
+  color: #666; /* Set text color */
+  margin-top: 10px; /* Add spacing between heading and text */
+}
