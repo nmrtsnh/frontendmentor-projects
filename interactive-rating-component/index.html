@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Rating state start -->
+    <script
+      src="https://kit.fontawesome.com/be36999159.js"
+      crossorigin="anonymous"
+    ></script>
 
-  How did we do?
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-1" id="container-1">
+        <div class="star-icon">
+          <img src="images/icon-star.svg" />
+        </div>
 
-  1 2 3 4 5
+        <h1 class="heading-1">How did we do?</h1>
+        <span class="text"
+          >Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!</span
+        >
+        <div class="rating-container">
+          <button class="rating">1</button>
+          <button class="rating">2</button>
+          <button class="rating">3</button>
+          <button class="rating">4</button>
+          <button class="rating">5</button>
+        </div>
+        <button class="submit-btn">Sumbit</button>
+      </div>
 
-  Submit
+      <div class="container-2" id="container-2">
+        <img
+          class="thank-you-img"
+          src="images/illustration-thank-you.svg"
+          alt="Thank you image"
+        />
+        <div class="rating-result">
+          <span class="text-1">You selected out of 5</span>
+        </div>
+        <h1 class="heading-1">Thank you!</h1>
+        <span class="text"
+          >We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!</span
+        >
+      </div>
+    </main>
 
-  <!-- Rating state end -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
