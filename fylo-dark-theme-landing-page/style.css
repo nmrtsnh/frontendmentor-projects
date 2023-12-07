@@ -28,8 +28,14 @@
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  background-color: var(--color-main-bg);
+
+  /* background-color: orangered; */
   color: var(--color-white);
+}
+
+main {
+  background-color: var(--color-main-bg);
+  /* position: relative; */
 }
 
 .header {
@@ -37,6 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-intro-sign-up-bg);
 }
 
 .header-logo {
@@ -71,10 +78,21 @@ body {
 }
 
 .section-1 {
-  width: 70%;
-  max-width: 440px;
+  /* width: 70%; */
+  /* max-width: 440px; */
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  /* z-index: 1000; */
+
+  background: url(images/bg-curvy-desktop.svg) no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  /* position: relative; */
+  background-color: var(--color-intro-sign-up-bg);
 }
 
 .intro-img {
@@ -138,15 +156,23 @@ body {
   width: 100%;
   max-width: 890px;
   margin: 5rem auto;
+
   /* margin-right: 10rem;
   margin-left: 10rem; */
   /* padding: 5rem 20rem; */
+
+  /* background: url(images/bg-curvy-desktop.svg); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* overflow: hidden; */
 }
 
 .card {
   border-radius: 8px;
   padding: 20px;
   text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .card img {
@@ -223,7 +249,7 @@ body {
   display: flex;
   gap: 2rem;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 
 .quote-container {
@@ -293,10 +319,10 @@ body {
 
 .section-5-cta {
   text-align: center;
-  box-shadow: 0 0 8px hsl(208, 11%, 55%);
-  background-color: var(--color-testimonial-bg);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  /* box-shadow: 0 0 8px hsl(208, 11%, 55%); */
+  background-color: #1c2431;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
   margin-bottom: 10rem;
@@ -306,6 +332,11 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  color: #c8c5c5;
+  max-width: 800px;
+  width: 100%;
+  /* align-items: center; */
+  /* margin-top: 10rem; */
 }
 
 .heading-3 {
@@ -313,33 +344,92 @@ body {
   margin-bottom: 2rem;
 }
 
+form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.section-5-btn {
+  white-space: nowrap;
+  width: 50%;
+  height: 40px;
+  background: linear-gradient(
+    to right,
+    var(--color-cyan-cta-gradient),
+    var(--color-blue-cta-gradient)
+  );
+  color: var(--color-white);
+  /* padding: 20px; */
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.section-5-btn:hover {
+  background: linear-gradient(
+    to right,
+    var(--color-blue-cta-gradient),
+    var(--color-cyan-cta-gradient)
+  );
+}
+
 .footer {
   background-color: var(--color-footer-bg);
-  color: white;
-  padding: 8rem;
-  position: relative;
+  /* color: #c8c5c5; */
+  padding-top: 9rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 9rem;
+  max-width: 1500px;
+  width: 100%;
+
+  /* position: relative; */
 }
 
 .footer-logo {
-  filter: invert(10);
   margin-bottom: 2rem;
 }
 
 .footer-details {
   display: flex;
-  gap: 8rem;
+  justify-content: space-between;
+  gap: 6rem;
+  /* gap: 8rem; */
+}
+.address {
+  max-width: 1000px;
+  width: 100%;
+  line-height: 1.6;
 }
 
 .icon {
   color: white;
 }
-
-.footer-contact {
-  width: 31%;
+.footer-list {
+  width: 200px;
 }
 
-.footer-contact li,
+.footer-contact li a,
+.footer-list li a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
 .footer-social li,
+.footer-contact li,
 .footer-list li {
   list-style: none;
   margin-bottom: 1.6rem;
@@ -350,10 +440,12 @@ body {
 .footer-contact li a {
   /* color: var(--color-pale-cyan); */
   text-decoration: none;
+  color: #c8c5c5;
 }
 
 .footer-social {
   display: flex;
+
   gap: 1.5rem;
 }
 
@@ -363,11 +455,4 @@ body {
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.copyright-container {
-  position: absolute;
-  bottom: 80px;
-  right: 0;
-  margin-right: 5rem;
 }
