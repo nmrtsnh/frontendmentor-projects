@@ -215,7 +215,10 @@
             would be happy to help you.
           </p>
           <form>
-            <input placeholder="email@example.com" />
+            <div class="input-form">
+              <input id="emailInput" placeholder="email@example.com" />
+              <span id="error-message" class="error-message"></span>
+            </div>
 
             <button class="section-5-btn">Get Started For Free</button>
           </form>
@@ -224,11 +227,7 @@
     </main>
 
     <footer class="footer">
-      <img
-        class="header-logo footer-logo"
-        src="images/logo.svg"
-        alt="Huddle Logo"
-      />
+      <img class="footer-logo" src="images/logo.svg" alt="Huddle Logo" />
       <div class="footer-details">
         <ul class="footer-contact">
           <li>
