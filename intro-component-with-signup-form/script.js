@@ -1,7 +1,6 @@
 const form = document.querySelector(".signup-form");
 
 form.addEventListener("submit", function (event) {
-  // Reset error styles
   const errorMessages = document.querySelectorAll(".error-msg");
   errorMessages.forEach(function (errorMsg) {
     errorMsg.style.display = "none";
@@ -12,7 +11,6 @@ form.addEventListener("submit", function (event) {
     errorIcon.style.display = "none";
   });
 
-  // Validate form fields
   let hasError = false;
   const formFields = form.querySelectorAll(".error");
   formFields.forEach(function (field) {
@@ -26,7 +24,6 @@ form.addEventListener("submit", function (event) {
       hasError = true;
     }
 
-    // Check email format
     if (field.name === "Email" && !isValidEmail(value)) {
       const errorMsg = field.nextElementSibling.nextElementSibling;
       const errorIcon = field.nextElementSibling;
@@ -37,13 +34,10 @@ form.addEventListener("submit", function (event) {
     }
   });
 
-  // Prevent form submission if there is an error
   if (hasError) {
     event.preventDefault();
   }
 });
-
-// Function to validate email format using regular expression
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
