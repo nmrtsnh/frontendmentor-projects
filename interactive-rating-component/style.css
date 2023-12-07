@@ -1,11 +1,3 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 :root {
   --color-orange: hsl(25, 97%, 53%);
   --color-white: hsl(0, 0%, 100%);
@@ -24,11 +16,10 @@
 body {
   font-size: 15px;
   font-family: "Overpass", sans-serif;
-}
-body {
   background-color: hsl(216, 12%, 8%);
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -141,4 +132,15 @@ body {
   padding: 10px 30px;
   border-radius: 50px;
   margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
+.attribution {
+  text-align: center;
+  color: var(--color-white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
