@@ -1,15 +1,4 @@
 const form = document.querySelector(".signup-form");
-const passwordInput = document.getElementById("password");
-const showPasswordCheckbox = document.getElementById("showPassword");
-
-// Event listener for the show password checkbox
-showPasswordCheckbox.addEventListener("change", function () {
-  if (showPasswordCheckbox.checked) {
-    passwordInput.type = "text";
-  } else {
-    passwordInput.type = "password";
-  }
-});
 
 form.addEventListener("submit", function (event) {
   // Reset error styles
