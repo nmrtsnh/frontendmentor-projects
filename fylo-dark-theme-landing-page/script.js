@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var form = document.querySelector("form");
   form.addEventListener("submit", function (event) {
     if (!validateForm()) {
-      event.preventDefault(); // Prevent the form from being submitted
+      event.preventDefault();
     }
   });
 
@@ -12,13 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var errorElement = document.getElementById("error-message");
 
     if (email === "") {
-      errorElement.textContent = "Please enter an email address";
-      return false; // Prevent form submission
+      errorElement.textContent = "Please enter a valid email address";
+      return false;
     }
 
-    // You can add more advanced email validation if needed
-
-    errorElement.textContent = ""; // Clear any previous error message
-    return true; // Allow form submission
+    errorElement.textContent = "";
+    return true;
   }
 });
