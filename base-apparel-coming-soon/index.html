@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  We're coming soon
+    <script
+      src="https://kit.fontawesome.com/be36999159.js"
+      crossorigin="anonymous"
+    ></script>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header-logo">
+        <img class="logo" src="images/logo.svg" alt="Base Apparel Logo" />
+      </div>
+      <div class="container-1">
+        <h1 class="heading-1">
+          We're <span class="heading-1-span">coming</span
+          ><span class="heading-1-span">soon</span>
+        </h1>
+        <span class="description"
+          >Hello fellow shoppers! We're currently building our new fashion
+          store.Add your email below to stay up-to-date with announcements and
+          our launch deals.
+        </span>
+        <form>
+          <input placeholder="Email Address" />
+          <button class="button">
+            <img
+              class="arrow-icon"
+              src="images/icon-arrow.svg"
+              alt="Arrow Icon"
+            />
+          </button>
+        </form>
+      </div>
+      <div class="cntainer-2">
+        <img
+          class="hero-desktop"
+          src="images/hero-desktop.jpg"
+          alt="An image of a girl"
+        />
+      </div>
+    </main>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
