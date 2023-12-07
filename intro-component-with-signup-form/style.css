@@ -1,10 +1,3 @@
-/* .input-error {
-  display: none;
-}
-.error-msg {
-  display: none;
-} */
-
 :root {
   --color-red: hsl(0, 100%, 74%);
   --color-green: hsl(154, 59%, 51%);
@@ -46,7 +39,6 @@ main {
 .content {
   width: 450px;
   margin-top: 200px;
-  /* margin-right: 100px; */
 }
 
 .heading-primary {
@@ -87,10 +79,6 @@ main {
   box-shadow: 0px 0.45em 0px 0px #df6d6d;
   padding: 1.5rem;
   position: relative;
-  /* padding-top: 2rem;
-  padding-bottom: 5rem;
-  padding-left: 5rem;
-  padding-right: 2rem; */
   border-radius: 5px;
 }
 
@@ -116,10 +104,6 @@ main {
 .signup-form input {
   display: flex;
   padding: 0 1em;
-  /* padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 140px;
-  padding-right: 140px; */
   margin-top: 0.9em;
   border-radius: 5px;
   width: 100%;
@@ -145,9 +129,6 @@ main {
 .error-msg {
   display: none;
 }
-/* .signup-form input.error {
-  border: 2px solid red;
-} */
 
 .terms {
   margin-top: 20px;
@@ -183,7 +164,6 @@ main {
 
 @media (max-width: 1000px) {
   main {
-    /* margin-top: 10rem; */
     grid-template-columns: 1fr;
   }
 
@@ -210,7 +190,6 @@ main {
     padding-right: 5rem;
     padding-bottom: 2rem;
     width: 400px;
-    /* height: 100px; */
   }
 
   .signup-pricing p {
