@@ -88,6 +88,19 @@ body {
   margin-top: 20px;
 }
 
+.form-span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-msg {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-tomato);
+
+  display: none;
+}
+
 .email {
   font-size: 0.9rem;
   font-weight: 700;
@@ -117,13 +130,7 @@ button {
 }
 
 button:hover {
-  /* background-color: var(--color-tomato); */
-  background: linear-gradient(
-    to right,
-    hsl(356, 88%, 64%),
-    /* Your specified color */ hsl(4, 92%, 59%)
-      /* A darker shade of the same color */
-  );
+  background: linear-gradient(to right, hsl(356, 88%, 64%), hsl(4, 92%, 59%));
   filter: brightness(1.2);
 }
 
@@ -163,7 +170,7 @@ button:hover {
 }
 
 .description-thank-you {
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .email-bold {
@@ -176,4 +183,14 @@ button:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+input.error {
+  border: 1px solid var(--color-tomato);
+  background-color: hsl(5, 41%, 95%);
+}
+
+input.error::placeholder {
+  font-weight: 700;
+  color: var(--color-tomato);
 }
