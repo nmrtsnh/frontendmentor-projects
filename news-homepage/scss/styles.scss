@@ -119,6 +119,11 @@ main {
       padding: 1rem 2rem;
       border: none;
       cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: var(--color-very-dark-blue);
+      }
     }
   }
 }
@@ -147,6 +152,12 @@ main {
       font-size: 1.2rem; // Set the font size for heading 3
       margin-bottom: 10px; // Adjust spacing as needed
       color: var(--color-off-white); // Set the color for the heading
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--color-soft-orange);
+      }
     }
 
     p {
@@ -210,6 +221,12 @@ main {
       color: var(--color-very-dark-blue);
       margin-top: 15px;
       display: block;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--color-soft-red);
+      }
     }
 
     .text-1 {
