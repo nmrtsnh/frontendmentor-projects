@@ -112,10 +112,18 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: var(--color-tomato);
+  /* background-color: var(--color-tomato); */
+  background: linear-gradient(
+    to right,
+    hsl(356, 88%, 64%),
+    /* Your specified color */ hsl(4, 92%, 59%)
+      /* A darker shade of the same color */
+  );
+  filter: brightness(1.2);
 }
 
 .form-image {
