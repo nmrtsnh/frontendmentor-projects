@@ -28,7 +28,7 @@ dismissButton.addEventListener("click", function () {
 
   emailInput.value = "";
   emailInput.classList.remove("error");
-  emailBold.textContent = ""; // Clear the email-bold content
+  emailBold.textContent = "";
 });
 
 function isValidEmail(email) {
