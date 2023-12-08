@@ -8,7 +8,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![Profile card component](./screenshot.jpg)
+![Profile card component](./images/screenshot.jpg)
 
 ### Links
 
