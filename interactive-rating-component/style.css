@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container-1,
@@ -143,4 +143,12 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  .container-1,
+  .container-2 {
+    max-width: 350px;
+    margin-top: 2rem;
+  }
 }
