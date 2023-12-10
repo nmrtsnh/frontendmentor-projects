@@ -255,6 +255,13 @@ main {
       margin-top: 15px;
     }
   }
+
+  .card-content-container {
+    display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 .attribution {
@@ -406,5 +413,36 @@ main {
         }
       }
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .section-3 {
+    .section-3-card {
+      gap: 1rem;
+      img {
+        width: 110px;
+      }
+
+      // .card-content {
+      //   width: 180px;
+      // }
+
+      .number {
+        font-size: 2.5rem;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
+
+      .text-1 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 0.8rem;
   }
 }

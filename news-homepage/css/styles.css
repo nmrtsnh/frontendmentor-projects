@@ -206,6 +206,10 @@ main {
   color: hsl(233, 8%, 50%);
   margin-top: 15px;
 }
+.section-3-card .card-content-container {
+  display: flex;
+  gap: 1rem;
+}
 
 .attribution {
   text-align: center;
@@ -315,6 +319,26 @@ main {
     margin: 0.5rem 0; /* Adjust margin as needed */
     text-align: center; /* Center the text within each link */
     padding-right: 20rem;
+  }
+}
+@media (max-width: 400px) {
+  .section-3 .section-3-card {
+    gap: 1rem;
+  }
+  .section-3 .section-3-card img {
+    width: 110px;
+  }
+  .section-3 .section-3-card .number {
+    font-size: 2.5rem;
+  }
+  .section-3 .section-3-card .text {
+    font-size: 1rem;
+  }
+  .section-3 .section-3-card .text-1 {
+    font-size: 0.8rem;
+  }
+  .attribution {
+    font-size: 0.8rem;
   }
 }
 
