@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Get references to the open button, close button, and mobile navigation
   var openBtn = document.getElementById("openBtn");
   var closeBtn = document.getElementById("closeBtn");
   var mobileNav = document.getElementById("mobileNav");
