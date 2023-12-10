@@ -26,15 +26,15 @@ function submit() {
     b.style.borderColor = "red";
   }
   if (c.value === "") {
-    document.getElementById("alert3").innerHTML = "Can't be Empty";
+    document.getElementById("alert3").innerHTML = "Can't be blank";
     document.getElementById("mm").style.borderColor = "red";
   }
   if (d.value === "") {
-    document.getElementById("alert4").innerHTML = "Can't be Empty";
+    // document.getElementById("alert4").innerHTML = "Can't be blank";
     document.getElementById("yy").style.borderColor = "red";
   }
   if (e.value === "") {
-    document.getElementById("alert5").innerHTML = "Can't be Empty";
+    document.getElementById("alert5").innerHTML = "Can't be blank";
     document.getElementById("cvc").style.borderColor = "red";
   }
 

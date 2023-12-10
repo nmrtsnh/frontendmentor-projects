@@ -1,10 +1,10 @@
-.attribution {
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
 
 :root {
   --gradient-active-input-border: linear-gradient(
@@ -25,93 +25,110 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Space Grotesk", sans-serif;
+  min-height: 100vh;
 }
 
 main {
   display: flex;
+  gap: 5%;
+  justify-content: space-between;
+  margin-top: 10%;
+}
 
-  justify-content: center;
-  align-items: center;
+main::before {
+  content: "";
+  background-image: url("images/bg-main-desktop.png");
+  background-size: cover;
+  width: 35%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
 }
 
 .card-container {
-  width: 800px;
-  min-height: 100vh;
-
-  /* display: none; */
+  max-width: 1440px;
+  width: 100%;
+  color: var(--color-white);
 }
+
 .card-front {
+  max-width: 450px;
+  width: 100%;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin: 0 auto 32px;
-  background-size: cover;
+  gap: 2rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 15rem;
+  background-image: url(images/bg-card-front.png);
   background-repeat: no-repeat;
-  position: relative;
+  background-size: contain;
+  margin-bottom: 2rem;
+  /* margin: 0 auto 32px; */
 }
 
 .card-logo {
-  position: absolute;
-  top: 230px;
-  left: 120px;
-  z-index: 100;
+  padding-bottom: 1rem;
 }
 
 .card-number {
-  position: absolute;
-  color: var(--color-white);
-  top: 340px;
-  left: 135px;
-
-  z-index: 100;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 0.3rem;
 }
 
-.card-image-front {
-  position: absolute;
-  top: 200px;
-  left: 100px;
-}
-
 .cardholder-details {
-  position: absolute;
   display: flex;
-  top: 390px;
-  left: 140px;
+  /* justify-content: space-between; */
+  gap: 10rem;
 }
 
 .cardholder-name {
-  color: var(--color-white);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
 }
 .card-expiry-date {
-  color: var(--color-white);
-  font-size: 14px;
-  margin-left: 200px;
+  font-size: 1rem;
 }
 
 .card-back {
+  max-width: 550px;
+  width: 100%;
+  height: 15rem;
+
+  background-image: url(images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-white);
+
+  margin-left: auto;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
 }
-.card-image-back {
-  position: absolute;
-  top: 450px;
-  left: 200px;
+
+.card-details-container {
+  /* display: none; */
 }
+
 .card-cvv {
-  color: var(--color-white);
+  font-size: 1rem;
+
   position: absolute;
-  top: 560px;
-  left: 550px;
-  z-index: 100;
-  font-size: 18px;
+  right: 160px;
 }
 
 .cardholder {
@@ -122,8 +139,20 @@ main {
 }
 
 .card-details-container {
+  max-width: 400px;
+  width: 100%;
+
+  margin-top: 6rem;
+
+  margin-right: 10rem;
+
   /* display: none; */
 }
+
+form {
+  margin-bottom: 2rem;
+}
+
 .cardholder-input {
   max-width: 100%;
   width: 350px;
@@ -134,15 +163,11 @@ main {
   font-size: 15px;
 
   padding-left: 15px;
-  font-family: "Space Grotesk", sans-serif;
+
   letter-spacing: 0.04rem;
 }
 .cardholder-input-margin {
   margin-bottom: 10px;
-}
-
-#cvc {
-  display: flex;
 }
 
 .expiry-details {
@@ -170,12 +195,6 @@ main {
   padding-left: 10px;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .confirm-button {
   padding: 10px 150px;
   border-radius: 10px;
@@ -184,23 +203,6 @@ main {
   color: var(--color-white);
   background-color: var(--color-very-dark-violet);
   cursor: pointer;
-}
-
-form {
-  margin-top: 10rem;
-  margin-bottom: 2rem;
-}
-body:after {
-  content: "";
-  background-image: url("images/bg-main-desktop.png");
-  background-size: cover;
-  width: 35%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: -100;
 }
 
 .alert {
@@ -212,6 +214,7 @@ body:after {
 
 .input-bottom {
   display: flex;
+
   margin-bottom: 20px;
   width: 100%;
   gap: 10px;
@@ -223,8 +226,9 @@ body:after {
 }
 
 .thankyou-container {
-  margin-top: 10rem;
+  margin-top: 6rem;
   text-align: center;
+  margin-right: 15rem;
   display: none;
 }
 
@@ -251,4 +255,141 @@ body:after {
 
 .continue-button {
   padding: 10px 100px;
+}
+
+@media (max-width: 1070px) {
+  .card-front,
+  .card-back {
+    /* width: 150%; */
+    margin-left: 2rem;
+  }
+  .card-details-container {
+    margin-left: 10rem;
+  }
+
+  .thankyou-container {
+    margin-top: 35rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  main::before {
+    display: none;
+  }
+
+  main::after {
+    content: "";
+    background-image: url(images/bg-main-mobile.png);
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    /* height: 80vh; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 0;
+    padding-left: 4rem;
+
+    position: relative;
+  }
+
+  .card-back,
+  .card-front {
+    /* max-width: 100%; */
+    width: 100%;
+    /* width: 80%; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-back {
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+
+    z-index: -1;
+
+    width: 100%;
+
+    /* width: 80%; */
+  }
+
+  .card-front {
+    top: 12.5rem;
+    left: 5rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .card-details-container {
+    margin-top: 40rem;
+    /* margin-left: 5%; */
+  }
+  .card-cvv {
+    left: 20rem;
+  }
+
+  .expiry-date {
+    left: 20rem;
+  }
+}
+
+@media (max-width: 740px) {
+  main::after {
+    height: 250px;
+  }
+  .card-front {
+    gap: 0.5rem;
+  }
+
+  .cardholder-details {
+    margin-top: 1rem;
+    gap: 5.5rem;
+  }
+
+  .cardholder-name,
+  .card-expiry-date {
+    font-size: 10px;
+  }
+  .card-back,
+  .card-front {
+    max-width: 60%;
+  }
+
+  .card-front {
+    top: 9.5rem;
+  }
+
+  .card-logo img {
+    width: 30%;
+  }
+
+  .card-number {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+  }
+
+  .card-cvv {
+    top: 4.2rem;
+    left: 14rem;
+  }
+
+  .card-details-container {
+    margin-top: 25rem;
+  }
 }
