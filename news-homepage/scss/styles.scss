@@ -15,15 +15,32 @@
 body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
 header {
   padding-top: 4rem;
   padding-left: 10rem;
   padding-right: 10rem;
   padding-bottom: 2rem;
+  position: relative;
 
   display: flex;
   justify-content: space-between;
+  // gap: 40rem;
+
   .header-logo {
     max-width: 100%;
     height: auto;
@@ -31,6 +48,7 @@ header {
   }
 
   .navbar {
+    // margin-left: 30rem;
     .navbar-list {
       list-style: none;
       padding: 0;
@@ -51,6 +69,22 @@ header {
         }
       }
     }
+  }
+  .open-btn,
+  .menu-icon,
+  .close-btn,
+  .close-icon {
+    display: none;
+  }
+
+  .open-btn,
+  .close-btn {
+    position: absolute;
+    right: 2rem;
+  }
+
+  .navbar-mobile {
+    display: none;
   }
 }
 
@@ -230,6 +264,9 @@ main {
   color: hsl(228, 45%, 44%);
 }
 @media (max-width: 1000px) {
+  header {
+    // gap: 14rem;
+  }
   main {
     grid-template-columns: 1fr; /* Switch to a single column layout */
   }
@@ -303,5 +340,71 @@ main {
 @media (max-width: 700px) {
   header {
     padding-left: 2rem;
+
+    .navbar {
+      display: none;
+    }
+
+    .open-btn,
+    .menu-icon,
+    .close-btn,
+    .close-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    .close-btn,
+    .close-icon {
+      z-index: 2;
+    }
+
+    .navbar-mobile {
+      // display: block;
+      // display: flex;
+      // flex-direction: column;
+      // flex-direction: column;
+      align-items: center;
+      background-color: var(--color-off-white);
+
+      padding: 1rem; /* Adjust padding as needed */
+      position: absolute;
+      top: 0; /* Adjust the top position as needed to avoid overlapping with header */
+      // left: 20rem;
+      left: 10rem;
+      right: 0;
+      padding-top: 10rem;
+      // padding-right: 10rem;
+      padding-left: 1.5rem;
+
+      z-index: 1;
+      // margin-top: 3rem;
+      min-height: 100vh;
+      position: fixed;
+      // max-width: 900px; /* Make each link take up the full width */
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: var(--color-very-dark-blue);
+          font-weight: 700;
+
+          font-size: 1.2rem; /* Adjust font size as needed */
+          margin: 0.5rem 0; /* Adjust margin as needed */
+          text-align: center; /* Center the text within each link */
+
+          // display: block;
+          // padding-right: 1rem;
+          padding-right: 20rem;
+        }
+      }
+    }
   }
 }

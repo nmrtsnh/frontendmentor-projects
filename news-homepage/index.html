@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div class="overlay" id="overlay"></div>
     <header>
       <img class="header-logo" src="assets/images/logo.svg" alt="W Logo" />
 
@@ -47,14 +48,14 @@
         </ul>
       </nav>
 
-      <div class="open-btn">
+      <div class="open-btn" id="openBtn">
         <img
           class="menu-icon"
           src="assets/images/icon-menu.svg"
           alt="Menu Icon"
         />
       </div>
-      <div class="close-btn">
+      <div class="close-btn" id="closeBtn">
         <img
           class="close-icon"
           src="assets/images/icon-menu-close.svg"
@@ -62,12 +63,24 @@
         />
       </div>
 
-      <nav class="navbar-mobile">
-        <a href="#">Home</a>
-        <a href="#">New</a>
-        <a href="#">Popular</a>
-        <a href="#">Trending</a>
-        <a href="#">Categories</a>
+      <nav class="navbar-mobile" id="mobileNav">
+        <ul class="mobile-list">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">New</a>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+          </li>
+          <li>
+            <a href="#">Trending</a>
+          </li>
+          <li>
+            <a href="#">Categories</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
