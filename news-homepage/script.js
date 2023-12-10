@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   openBtn.style.display = "block";
   closeBtn.style.display = "none";
-  mobileNav.style.display = "none";
+  overlay.style.display = "none";
 
   openBtn.addEventListener("click", function (e) {
     e.preventDefault();

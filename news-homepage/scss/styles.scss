@@ -31,15 +31,13 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   padding-top: 4rem;
   padding-left: 10rem;
   padding-right: 10rem;
   padding-bottom: 2rem;
-  position: relative;
-
-  display: flex;
-  justify-content: space-between;
-  // gap: 40rem;
 
   .header-logo {
     max-width: 100%;
@@ -48,7 +46,6 @@ header {
   }
 
   .navbar {
-    // margin-left: 30rem;
     .navbar-list {
       list-style: none;
       padding: 0;
@@ -91,7 +88,6 @@ header {
 main {
   display: grid;
   grid-template-columns: 70% 30%;
-  // column-gap: 1rem;
   margin-bottom: 20rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -178,6 +174,7 @@ main {
       line-height: 1.6;
       color: #ccc;
     }
+
     &:not(:last-child) {
       &::after {
         content: "";
@@ -196,23 +193,14 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
-  // padding-left: 10rem;
-  // padding-right: 5.5rem;
-
   max-width: 1145px;
   width: 100%;
   margin: 0 auto;
-
-  margin-bottom: 10rem;
-
-  // margin-left: 10rem;
-  // margin-right: 6rem;
+  margin-bottom: 8rem;
 }
 
 .section-3-card {
-  // margin-right: 20px;
   display: flex;
-
   align-items: flex-start;
   gap: 1rem;
 
@@ -221,45 +209,35 @@ main {
     width: 100%;
   }
 
-  .card-content {
-    // text-align: left;
-    // color: #333;
+  .number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-dark-grayish-blue);
+  }
 
-    // max-width: 500px;
-    // width: 100%;
+  .text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-very-dark-blue);
+    margin-top: 15px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 
-    .number {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--color-dark-grayish-blue);
+    &:hover {
+      color: var(--color-soft-red);
     }
+  }
 
-    .text {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--color-very-dark-blue);
-      margin-top: 15px;
-      display: block;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
-
-      &:hover {
-        color: var(--color-soft-red);
-      }
-    }
-
-    .text-1 {
-      font-weight: 400;
-      line-height: 1.4;
-      color: hsl(233, 8%, 50%);
-      margin-top: 15px;
-    }
+  .text-1 {
+    font-weight: 400;
+    line-height: 1.4;
+    color: hsl(233, 8%, 50%);
+    margin-top: 15px;
   }
 
   .card-content-container {
     display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
     gap: 1rem;
   }
 }
@@ -271,33 +249,27 @@ main {
   color: hsl(228, 45%, 44%);
 }
 @media (max-width: 1000px) {
-  header {
-    // gap: 14rem;
-  }
   main {
-    grid-template-columns: 1fr; /* Switch to a single column layout */
+    grid-template-columns: 1fr;
   }
 
   .section-1 {
     .section-1-desktop__img {
-      display: none; /* Hide the desktop image on smaller screens */
+      display: none;
     }
 
     .section-1-mobile__img {
-      display: block; /* Show the mobile image on smaller screens */
-      max-width: 100%; /* Make the image full-width */
-      margin-top: 1rem; /* Add some spacing */
+      display: block;
+      max-width: 100%;
+      margin-top: 1rem;
     }
 
     .section-1-content {
-      flex-direction: column; /* Stack content in a column */
+      flex-direction: column;
       gap: 1rem;
 
       .heading-1 {
         font-size: 5rem;
-        // text-align: left;
-        // font-weight: 800;
-        // color: var(--color-very-dark-blue);
         max-width: 600px;
       }
 
@@ -314,13 +286,12 @@ main {
   }
 
   .section-2 {
-    padding: 1rem; /* Add some spacing around the content */
+    padding: 1rem;
   }
 
   .section-3 {
     flex-direction: column;
-    padding-left: 2rem; /* Adjust padding on the left */
-    // padding-right: 1rem; /* Adjust padding on the right */
+    padding-left: 2rem;
 
     .section-3-card {
       gap: 2rem;
@@ -343,7 +314,6 @@ main {
   }
 }
 
-/* Media query for mobile devices */
 @media (max-width: 700px) {
   header {
     padding-left: 2rem;
@@ -366,28 +336,18 @@ main {
     }
 
     .navbar-mobile {
-      // display: block;
-      // display: flex;
-      // flex-direction: column;
-      // flex-direction: column;
-      align-items: center;
       background-color: var(--color-off-white);
-
-      padding: 1rem; /* Adjust padding as needed */
-      position: absolute;
-      top: 0; /* Adjust the top position as needed to avoid overlapping with header */
-      // left: 20rem;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
       left: 10rem;
+      // right: -110px;
       right: 0;
       padding-top: 10rem;
-      // padding-right: 10rem;
       padding-left: 1.5rem;
-
       z-index: 1;
-      // margin-top: 3rem;
       min-height: 100vh;
-      position: fixed;
-      // max-width: 900px; /* Make each link take up the full width */
+      transition: 0.5s ease-in-out;
 
       ul {
         display: flex;
@@ -402,14 +362,14 @@ main {
           text-decoration: none;
           color: var(--color-very-dark-blue);
           font-weight: 700;
-
-          font-size: 1.2rem; /* Adjust font size as needed */
-          margin: 0.5rem 0; /* Adjust margin as needed */
-          text-align: center; /* Center the text within each link */
-
-          // display: block;
-          // padding-right: 1rem;
+          font-size: 1.2rem;
+          margin: 0.5rem 0;
+          text-align: center;
           padding-right: 20rem;
+
+          &:hover {
+            color: var(--color-soft-red);
+          }
         }
       }
     }
@@ -417,16 +377,19 @@ main {
 }
 
 @media (max-width: 400px) {
+  .section-1 {
+    .section-1-content {
+      .heading-1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
   .section-3 {
     .section-3-card {
       gap: 1rem;
       img {
         width: 110px;
       }
-
-      // .card-content {
-      //   width: 180px;
-      // }
 
       .number {
         font-size: 2.5rem;
