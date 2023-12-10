@@ -1,0 +1,254 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --gradient-active-input-border: linear-gradient(
+    to right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+
+  --color-input-errors: hsl(0, 100%, 66%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grayish-violet: hsl(270, 3%, 87%);
+  --color-dark-grayish-violet: hsl(279, 6%, 55%);
+  --color-very-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+main {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 800px;
+  min-height: 100vh;
+
+  /* display: none; */
+}
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 auto 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card-logo {
+  position: absolute;
+  top: 230px;
+  left: 120px;
+  z-index: 100;
+}
+
+.card-number {
+  position: absolute;
+  color: var(--color-white);
+  top: 340px;
+  left: 135px;
+
+  z-index: 100;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.card-image-front {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.cardholder-details {
+  position: absolute;
+  display: flex;
+  top: 390px;
+  left: 140px;
+}
+
+.cardholder-name {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+.card-expiry-date {
+  color: var(--color-white);
+  font-size: 14px;
+  margin-left: 200px;
+}
+
+.card-back {
+  display: flex;
+  position: relative;
+}
+.card-image-back {
+  position: absolute;
+  top: 450px;
+  left: 200px;
+}
+.card-cvv {
+  color: var(--color-white);
+  position: absolute;
+  top: 560px;
+  left: 550px;
+  z-index: 100;
+  font-size: 18px;
+}
+
+.cardholder {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.card-details-container {
+  /* display: none; */
+}
+.cardholder-input {
+  max-width: 100%;
+  width: 350px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color-dark-grayish-violet);
+  font-size: 15px;
+
+  padding-left: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.04rem;
+}
+.cardholder-input-margin {
+  margin-bottom: 10px;
+}
+
+#cvc {
+  display: flex;
+}
+
+.expiry-details {
+  max-width: 100%;
+  width: 90px;
+  height: 45px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--color-dark-grayish-violet);
+}
+.cvc-margin {
+  margin-left: 20px;
+}
+.cvc-details {
+  max-width: 100%;
+  width: 150px;
+  height: 45px;
+  margin-top: 10px;
+
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--color-dark-grayish-violet);
+  padding-left: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-button {
+  padding: 10px 150px;
+  border-radius: 10px;
+  border: 1px solid var(--color-dark-grayish-violet);
+  font-size: 18px;
+  color: var(--color-white);
+  background-color: var(--color-very-dark-violet);
+  cursor: pointer;
+}
+
+form {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+body:after {
+  content: "";
+  background-image: url("images/bg-main-desktop.png");
+  background-size: cover;
+  width: 35%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -100;
+}
+
+.alert {
+  font-size: 0.7rem;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: var(--color-input-errors);
+}
+
+.input-bottom {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  gap: 10px;
+}
+
+.expiry-date {
+  display: flex;
+  gap: 10px;
+}
+
+.thankyou-container {
+  margin-top: 10rem;
+  text-align: center;
+  display: none;
+}
+
+.thankyou-image {
+  width: 70px;
+  margin-bottom: 30px;
+}
+
+.thankyou-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  color: var(--color-very-dark-violet);
+  margin-bottom: 1rem;
+}
+
+.thankyou-text {
+  font-size: 1rem;
+  color: hsl(279, 6%, 55%);
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.continue-button {
+  padding: 10px 100px;
+}
