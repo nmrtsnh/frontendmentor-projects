@@ -14,12 +14,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Expenses chart component](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/nmrtsnh/frontendmentor-projects/tree/main/expenses-chart-component)
+- Live Site URL: (https://nmrtsnh.github.io/frontendmentor-projects/expenses-chart-component/)
 
 ## My process
 
