@@ -80,8 +80,8 @@ main {
   flex-direction: column;
   justify-content: end;
   cursor: pointer;
-  max-width: 100%;
-  width: 35px;
+  max-width: 50px;
+  width: 100%;
 }
 
 .spending-amount {
@@ -126,7 +126,7 @@ main {
   display: block;
   border: 1px solid var(--cream);
   width: 100%;
-  width: 310px;
+  width: 410px;
 
   margin-bottom: 30px;
 }
@@ -181,6 +181,14 @@ main {
   }
 
   .spending-section {
-    padding-left: 1rem;
+    width: 350px;
+  }
+
+  .spending-bars {
+    width: 35px;
+  }
+
+  .total {
+    gap: 40px;
   }
 }
