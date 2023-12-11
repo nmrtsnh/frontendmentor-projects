@@ -111,32 +111,8 @@ main {
   background-color: hsl(9, 78%, 81%);
 }
 
-.bar-1 {
-  height: 35px;
-}
-.bar-2 {
-  height: 69px;
-}
-
 .bar-3 {
   background-color: var(--cyan);
-  height: 105px;
-}
-
-.bar-4 {
-  height: 62px;
-}
-
-.bar-5 {
-  height: 47px;
-}
-
-.bar-6 {
-  height: 87px;
-}
-
-.bar-7 {
-  height: 51px;
 }
 
 .spending-day {
@@ -191,6 +167,7 @@ main {
 }
 
 .attribution {
+  margin-top: 10px;
   font-size: 11px;
   text-align: center;
 }
