@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .notify-container {
@@ -79,13 +79,17 @@ body {
   color: var(--color-gray);
   line-height: 1.2;
 }
+
+.container-content {
+  position: relative;
+}
 .error-msg {
-  margin-top: 10px;
+  position: absolute;
+  top: 11.5rem;
+  left: 38%;
+  transform: translateX(-50%);
   color: var(--color-light-red);
   font-size: 18px;
-
-  margin-right: 350px;
-  font-style: italic;
 
   display: none;
 }
@@ -149,17 +153,22 @@ body {
     margin-bottom: 8rem;
   }
 
-  .email-input {
+  /* .email-input {
     position: relative;
-  }
+  } */
 
-  .error-msg {
+  /* .error-msg {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     margin-top: -85px;
     font-size: 1rem;
+  } */
+
+  .error-msg {
+    top: 67%; /* Adjust the top position for smaller screens */
+    /* left: 50%; */
   }
 
   .notify-btn {
@@ -171,5 +180,10 @@ body {
 @media (max-width: 400px) {
   .email-input {
     width: 300px;
+  }
+
+  .error-msg {
+    top: 74%; /* Further adjust the top position for even smaller screens */
+    font-size: 14px;
   }
 }
