@@ -13,7 +13,6 @@
   box-sizing: border-box;
 }
 body {
-  /* position: relative; */
   display: grid;
   place-items: center;
   margin-top: 70px;
@@ -22,8 +21,6 @@ body {
   font-size: 18px;
 }
 main {
-  /* max-width: 100%; */
-  /* width: 360px; */
   text-align: center;
 }
 
@@ -55,7 +52,6 @@ main {
 .spending-section {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   background-color: white;
   padding-left: 25px;
   padding-right: 25px;
@@ -65,7 +61,6 @@ main {
 .spending-heading {
   font-size: 22px;
   padding-top: 30px;
-  /* padding-left: 20px; */
   font-weight: 700;
   color: var(--dark-brown);
   text-align: start;
@@ -76,8 +71,6 @@ main {
   justify-content: center;
   text-align: center;
   gap: 10px;
-
-  /* height: 10px; */
   position: relative;
   margin-bottom: 40px;
 }
@@ -89,12 +82,12 @@ main {
   cursor: pointer;
   max-width: 100%;
   width: 35px;
-
-  /* height: 250px; */
-  /* position: relative; */
 }
 
 .spending-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 15px;
@@ -102,15 +95,8 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   color: white;
-  /* padding: 10px; */
   text-align: center;
-  /* width: auto; */
   height: 25px;
-  display: flex;
-  justify-content: center;
-
-  align-items: center;
-  /* width: 35px; */
   border-radius: 4px;
 
   visibility: hidden;
@@ -126,37 +112,30 @@ main {
 }
 
 .bar-1 {
-  /* height: 17.45%; */
   height: 35px;
 }
 .bar-2 {
-  /* height: 34.91%; */
   height: 69px;
 }
 
 .bar-3 {
   background-color: var(--cyan);
-  /* height: 52.36%; */
   height: 105px;
 }
 
 .bar-4 {
-  /* height: 31.07%; */
   height: 62px;
 }
 
 .bar-5 {
-  /* height: 23.39%; */
   height: 47px;
 }
 
 .bar-6 {
-  /* height: 43.28%; */
   height: 87px;
 }
 
 .bar-7 {
-  /* height: 25.48%; */
   height: 51px;
 }
 
