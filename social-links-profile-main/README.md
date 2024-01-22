@@ -12,12 +12,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Social links profile](./screenshot.jpg)
+![Social links profile](./assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/nmrtsnh/frontendmentor-projects/tree/main/social-links-profile-main)
+- Live Site URL: [Live site URL here](https://nmrtsnh.github.io/frontendmentor-projects/social-links-profile-main/)
 
 ## My process
 
