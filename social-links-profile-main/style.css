@@ -5,3 +5,22 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --dark-grey: hsl(0, 0%, 20%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--off-black);
+  color: var(--white);
+}
