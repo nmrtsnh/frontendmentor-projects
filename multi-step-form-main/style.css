@@ -1,0 +1,382 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.form-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-info input {
+  width: 200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  background-color: hsl(217, 100%, 97%);
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+
+  display: grid;
+  place-items: center;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 6rem;
+  min-height: 650px;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  /* padding: 80px;
+  height: 600px;
+  width: 900px; */
+  /* width: 100%;
+  height: 100%; */
+}
+
+.sidebar-container {
+  background: url("assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 100%;
+  padding: 30px 20px;
+}
+.step-sidebar {
+  display: flex;
+  gap: 1rem;
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+.step-number.active {
+  background-color: hsl(206, 94%, 87%);
+  color: black;
+}
+
+.step-number {
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.text {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 13px;
+
+  font-weight: 400;
+  color: hsl(217, 100%, 97%);
+}
+.subtitle {
+  color: hsl(0, 0%, 100%);
+}
+.steps-container {
+  position: relative;
+}
+
+.step-active {
+  display: inline-block;
+}
+
+.primary-heading {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+.primary-text {
+  font-size: 16px;
+  /* margin-bottom: 20px; */
+  color: hsl(231, 11%, 63%);
+}
+
+.form-details {
+  margin-top: 30px;
+  margin-bottom: 4px;
+}
+
+.form-info input {
+  width: 100%;
+  min-width: 600px;
+  padding: 10px;
+
+  border-radius: 5px;
+  border: 2x solild hsl(231, 11%, 63%);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form-info label {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.error-msg {
+  float: right;
+  color: hsl(354, 84%, 57%);
+  font-weight: 500;
+  font-size: 16px;
+  /* display: none; */
+}
+
+.step {
+  /* display: none; */
+}
+
+.pricing-details {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  min-height: 330px;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 30px;
+
+  border: 2px solid hsl(229, 24%, 87%);
+  padding: 10px;
+  height: 180px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-icon {
+  margin-bottom: auto;
+}
+.card-icon img {
+  width: 30%;
+}
+
+.card-name {
+  font-weight: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-price {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.yearly-benefit {
+  font-size: 14px;
+}
+
+#select-plan-error {
+  color: red;
+  text-align: center;
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.toggle-container {
+  background-color: hsl(217, 100%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.monthly-toggle {
+  padding-right: 10px;
+  font-weight: 500;
+}
+.yearly-toggle {
+  padding-left: 10px;
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: hsl(213, 96%, 18%);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  /* left: 3px; */
+  background-color: white;
+  transition: 0.4s;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.next-button {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(217, 100%, 97%);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.go-back-button {
+  color: hsl(231, 11%, 63%);
+
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.add-ons {
+  /* margin-bottom: 4rem; */
+  min-height: 400px;
+}
+.add-ons-card {
+  margin-top: 20px;
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.add-ons-card input {
+  margin-right: 20px;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid hsl(229, 24%, 87%);
+}
+
+.add-ons-text {
+  margin-right: auto;
+}
+
+.add-ons-name {
+  font-weight: 700;
+}
+
+.add-on-description {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+
+.summary {
+  min-height: 350px;
+}
+
+.selected-plan-container {
+  margin-top: 20px;
+
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* display: flex;
+  align-items: center; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  background-color: hsl(217, 100%, 97%);
+}
+
+.change-plan {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  text-decoration: underline;
+  margin: auto;
+}
+
+.thank-you {
+  min-height: 350px;
+  text-align: center;
+}
+
+.thankyou-image {
+  margin-top: 50px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.thankyou-image img {
+  width: 100%;
+}
+.primary-text {
+  max-width: 500px;
+  margin: 0 auto;
+}
