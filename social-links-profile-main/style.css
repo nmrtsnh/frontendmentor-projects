@@ -1,18 +1,17 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 :root {
   --green: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
-  --dark-grey: hsl(0, 0%, 20%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
   --off-black: hsl(0, 0%, 8%);
 }
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 * {
   margin: 0;
   padding: 0;
@@ -23,4 +22,86 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--off-black);
   color: var(--white);
+  font-size: 14px;
+  /* position: relative; */
+}
+
+main {
+  position: relative;
+  height: 100%;
+}
+
+.container {
+  /* width: 80%; */
+  max-width: 750px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-grey);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 15px;
+  padding: 30px;
+
+  /* overflow: hidden; */
+}
+
+.container-img img {
+  max-width: 50%;
+  border-radius: 100%;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.container span {
+  margin-bottom: 20px;
+  color: var(--green);
+  font-weight: 400;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+.container ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.container ul li a {
+  display: inline-block;
+
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--grey);
+  /* padding: 8px 12px; */
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.container ul li a:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
