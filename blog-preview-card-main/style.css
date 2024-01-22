@@ -19,6 +19,110 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 body {
   background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  margin: 0;
+  align-items: center;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 400px;
+  /* width: 100%; */
+  padding: 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--black);
+  box-shadow: 8px 8px 1px var(--black);
+}
+
+.card-img img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.learning {
+  background-color: var(--yellow);
+  display: block;
+  width: fit-content;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.published-date {
+  color: var(--black);
+}
+
+.foundations {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.description {
+  color: var(--grey);
+  font-weight: 600;
+  width: 90%;
+  line-height: 1.4;
+}
+
+.avatar-card {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.avatar-card img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avatar-name {
+  font-weight: 800;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
 }
