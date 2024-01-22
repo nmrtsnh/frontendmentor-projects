@@ -23,7 +23,6 @@ body {
   background-color: var(--off-black);
   color: var(--white);
   font-size: 14px;
-  /* position: relative; */
 }
 
 main {
@@ -32,7 +31,6 @@ main {
 }
 
 .container {
-  /* width: 80%; */
   max-width: 750px;
   margin: 0 auto;
   position: absolute;
@@ -47,8 +45,6 @@ main {
 
   border-radius: 15px;
   padding: 30px;
-
-  /* overflow: hidden; */
 }
 
 .container-img img {
@@ -86,8 +82,7 @@ main {
   text-decoration: none;
   color: var(--white);
   background-color: var(--grey);
-  /* padding: 8px 12px; */
-  border-radius: 5px;
+  border-radius: 10px;
   width: 300px;
   height: 50px;
   text-align: center;
@@ -104,4 +99,14 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 80%;
+  }
+
+  .container ul li a {
+    width: 280px;
+  }
 }
