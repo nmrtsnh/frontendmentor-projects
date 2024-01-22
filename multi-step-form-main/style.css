@@ -5,6 +5,20 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+
+  --cool-grey: hsl(231, 11%, 63%);
+  --light-grey: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
 .form-info {
   display: flex;
   flex-direction: column;
@@ -23,7 +37,7 @@
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
-  background-color: hsl(217, 100%, 97%);
+  background-color: var(--magnolia);
 }
 
 main {
@@ -70,13 +84,13 @@ main {
 }
 
 .step-number.active {
-  background-color: hsl(206, 94%, 87%);
+  background-color: var(--light-blue);
   color: black;
 }
 
 .step-number {
-  border: 1px solid hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 100%);
+  border: 1px solid var(--white);
+  color: var(--white);
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -88,7 +102,7 @@ main {
 }
 
 .text {
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
   text-transform: uppercase;
 }
 
@@ -96,10 +110,10 @@ main {
   font-size: 13px;
 
   font-weight: 400;
-  color: hsl(217, 100%, 97%);
+  color: var(--magnolia);
 }
 .subtitle {
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
 }
 .steps-container {
   position: relative;
@@ -118,7 +132,8 @@ main {
 .primary-text {
   font-size: 16px;
   /* margin-bottom: 20px; */
-  color: hsl(231, 11%, 63%);
+  color: var(--cool-grey);
+  max-width: 500px;
 }
 
 .form-details {
@@ -144,7 +159,7 @@ main {
 
 .error-msg {
   float: right;
-  color: hsl(354, 84%, 57%);
+  color: var(--strawberry-red);
   font-weight: 500;
   font-size: 16px;
   /* display: none; */
@@ -167,7 +182,7 @@ main {
 
   margin-right: 30px;
 
-  border: 2px solid hsl(229, 24%, 87%);
+  border: 2px solid var(--light-grey);
   padding: 10px;
   height: 180px;
   width: 100%;
@@ -188,7 +203,7 @@ main {
 }
 
 .card-price {
-  color: hsl(231, 11%, 63%);
+  color: var(--cool-grey);
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -203,10 +218,12 @@ main {
   padding-bottom: 8px;
   font-size: 14px;
   font-weight: 600;
+
+  display: none;
 }
 
 .toggle-container {
-  background-color: hsl(217, 100%, 97%);
+  background-color: var(--magnolia);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,7 +238,7 @@ main {
 }
 .yearly-toggle {
   padding-left: 10px;
-  color: hsl(231, 11%, 63%);
+  color: var(--cool-grey);
   font-weight: 500;
 }
 .switch {
@@ -244,7 +261,7 @@ main {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: hsl(213, 96%, 18%);
+  background-color: var(--marine-blue);
   transition: 0.4s;
 }
 
@@ -269,8 +286,8 @@ main {
 }
 
 .next-button {
-  background-color: hsl(213, 96%, 18%);
-  color: hsl(217, 100%, 97%);
+  background-color: var(--marine-blue);
+  color: var(--magnolia);
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -285,7 +302,7 @@ main {
 }
 
 .go-back-button {
-  color: hsl(231, 11%, 63%);
+  color: var(--cool-grey);
 
   border: none;
   background: none;
@@ -297,6 +314,7 @@ main {
   position: absolute;
   left: 0;
   bottom: 0;
+  display: none;
 }
 
 .add-ons {
@@ -305,7 +323,7 @@ main {
 }
 .add-ons-card {
   margin-top: 20px;
-  border: 2px solid hsl(229, 24%, 87%);
+  border: 2px solid var(--light-grey);
   border-radius: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -317,7 +335,7 @@ main {
   margin-right: 20px;
   width: 1.2em;
   height: 1.2em;
-  border: 2px solid hsl(229, 24%, 87%);
+  border: 2px solid var(--light-grey);
 }
 
 .add-ons-text {
@@ -329,7 +347,7 @@ main {
 }
 
 .add-on-description {
-  color: hsl(231, 11%, 63%);
+  color: var(--cool-grey);
   font-weight: 500;
 }
 
@@ -347,14 +365,14 @@ main {
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 20px;
-  background-color: hsl(217, 100%, 97%);
+  background-color: var(--magnolia);
 }
 
 .change-plan {
   background: none;
   border: none;
   font-size: 18px;
-  color: hsl(231, 11%, 63%);
+  color: var(--cool-grey);
   font-weight: 500;
   text-decoration: underline;
   margin: auto;
@@ -377,6 +395,5 @@ main {
   width: 100%;
 }
 .primary-text {
-  max-width: 500px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }

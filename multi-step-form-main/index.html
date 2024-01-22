@@ -27,28 +27,28 @@
         <!-- SIDEBAR -->
         <div class="sidebar-container">
           <div class="step-sidebar">
-            <div class="step-number active">1</div>
+            <div class="step-number active" data-step="1">1</div>
             <div class="text">
               <p class="title">Step 1</p>
               <p class="subtitle">Your info</p>
             </div>
           </div>
           <div class="step-sidebar">
-            <div class="step-number">2</div>
+            <div class="step-number" data-step="2">2</div>
             <div class="text">
               <p class="title">Step 2</p>
               <p class="subtitle">Select Plan</p>
             </div>
           </div>
           <div class="step-sidebar">
-            <div class="step-number">3</div>
+            <div class="step-number" data-step="3">3</div>
             <div class="text">
               <p class="title">Step 3</p>
               <p class="subtitle">Add-ons</p>
             </div>
           </div>
           <div class="step-sidebar">
-            <div class="step-number">4</div>
+            <div class="step-number" data-step="4">4</div>
             <div class="text">
               <p class="title">Step 4</p>
               <p class="subtitle">Summary</p>
@@ -58,7 +58,7 @@
 
         <div class="steps-container">
           <!-- STEP 1-->
-          <div class="personal-info step-active" id="step-1">
+          <div class="personal-info step-active" id="step-1" data-step="1">
             <h3 class="primary-heading">Personal Info</h3>
             <p class="primary-text">
               Please provide your name, email address, and phone number.
@@ -102,13 +102,13 @@
           </div>
 
           <!-- STEP 2-->
-          <div class="plan-details step" id="step-2" hidden>
+          <div class="plan-details step" id="step-2" data-step="2" hidden>
             <h3 class="primary-heading">Select your plan</h3>
             <p class="primary-text">
               You have the option of monthly or yearly billing.
             </p>
             <div class="pricing-details">
-              <div class="pricing-card">
+              <div class="pricing-card active pricing-card.arcade">
                 <div class="card-icon">
                   <img src="assets/images/icon-arcade.svg" />
                 </div>
@@ -123,7 +123,7 @@
                   <p class="yearly-benefit">2 months free</p>
                 </div>
               </div>
-              <div class="pricing-card">
+              <div class="pricing-card pricing-card.advance">
                 <div class="card-icon">
                   <img src="assets/images/icon-advanced.svg" />
                 </div>
@@ -138,7 +138,7 @@
                   <p class="yearly-benefit">2 months free</p>
                 </div>
               </div>
-              <div class="pricing-card">
+              <div class="pricing-card pricing-card.pro">
                 <div class="card-icon">
                   <img src="assets/images/icon-pro.svg" />
                 </div>
@@ -156,20 +156,24 @@
             </div>
             <p id="select-plan-error">Please select a plan</p>
             <div class="toggle-container">
-              <p class="monthly-toggle">Monthly</p>
+              <label class="toggle-label monthly-toggle" for="toggleSwitch"
+                >Monthly</label
+              >
               <div class="toggle">
                 <!-- <div class="toggle-button"></div> -->
-                <label class="switch">
-                  <input type="checkbox" />
+                <label class="switch" id="toggle-switch">
+                  <input type="checkbox" id="toggleSwitch" />
                   <span class="slider round"></span>
                 </label>
               </div>
-              <p class="yearly-toggle">Yearly</p>
+              <label class="toggle-label yearly-toggle" for="toggleSwitch"
+                >Yearly</label
+              >
             </div>
           </div>
 
           <!-- STEP 3 -->
-          <div class="add-ons" id="step-3" hidden>
+          <div class="add-ons" id="step-3" data-step="3" hidden>
             <h3 class="primary-heading">Pick add-ons</h3>
             <p class="primary-text">
               Add-ons help enhance your gaming experience.
@@ -222,7 +226,7 @@
 
           <!-- STEP 4-->
 
-          <div class="summary" id="step-4" hidden>
+          <div class="summary" id="step-4" data-step="4" hidden>
             <h3 class="primary-heading">Finishing up</h3>
             <p class="primary-text">
               Double-check everything looks OK before confirming.
@@ -259,7 +263,9 @@
           <div class="button-container">
             <div class="button">
               <button class="go-back-button">Go Back</button>
-              <button class="next-button">Next Step</button>
+              <button class="next-button" id="next-step-button">
+                Next Step
+              </button>
             </div>
           </div>
         </div>
