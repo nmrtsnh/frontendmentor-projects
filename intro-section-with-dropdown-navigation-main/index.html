@@ -1,39 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Features
-  Company
-  Careers
-  About
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Login
-  Register
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <header class="header">
+      <div class="snap-logo">
+        <img src="images/logo.svg" alt="Snap Logo" />
+      </div>
 
-  Make remote work
+      <div class="navbar">
+        <div class="navbar-menu">
+          <div class="navbar-list" id="featuresList">
+            <p class="list-name">Features</p>
+            <img src="images/icon-arrow-down.svg" />
+          </div>
+          <div
+            class="navbar-dropdown-list feature-dropdown-list"
+            id="featuresDropdown"
+          >
+            <div class="dropdown-item">
+              <img class="icon" src="images/icon-todo.svg" />
+              <p class="item-name">Todo List</p>
+            </div>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+            <div class="dropdown-item">
+              <img class="icon" src="images/icon-calendar.svg" />
+              <p class="item-name">Calendar</p>
+            </div>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <div class="dropdown-item">
+              <img class="icon" src="images/icon-reminders.svg" />
+              <p class="item-name">Reminders</p>
+            </div>
+
+            <div class="dropdown-item">
+              <img class="icon" src="images/icon-planning.svg" />
+              <p class="item-name">Planning</p>
+            </div>
+          </div>
+
+          <div class="navbar-list" id="companyList">
+            <p class="list-name">Company</p>
+            <img src="images/icon-arrow-down.svg" />
+          </div>
+
+          <div
+            class="navbar-dropdown-list company-dropdown-list"
+            id="companyDropdown"
+          >
+            <div class="dropdown-item">
+              <p class="item-name">History</p>
+            </div>
+
+            <div class="dropdown-item">
+              <p class="item-name">Our Team</p>
+            </div>
+
+            <div class="dropdown-item">
+              <p class="item-name">Blog</p>
+            </div>
+          </div>
+
+          <div class="navbar-list">
+            <p class="list-name">Careers</p>
+          </div>
+
+          <div class="navbar-list">
+            <p class="list-name">About</p>
+          </div>
+        </div>
+
+        <div class="navbar-btn">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="container-left">
+        <h1 class="heading-1">Make remote work</h1>
+        <p class="text">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="learn-more-btn">Learn more</button>
+      </div>
+      <div class="container-right">
+        <img class="container-img" src="images/image-hero-desktop.png" alt="" />
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
