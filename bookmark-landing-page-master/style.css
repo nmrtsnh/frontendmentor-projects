@@ -23,3 +23,41 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
 }
+
+.flex {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.container {
+  width: 80%;
+  max-width: 750px;
+  /* margin: 0 auto; */
+}
+
+.header__logo {
+  max-width: 100%;
+}
+
+/* .nav {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.nav {
+  /* flex-grow: 1; */
+}
+
+.nav__list {
+  /* margin-left: auto; */
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+.nav__item + .nav__item {
+  margin-left: 1em;
+}
