@@ -24,35 +24,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container flex">
-        <div class="logo">
-          <img
-            class="header__logo"
-            src="images/logo-bookmark.svg"
-            alt="Bookmark Logo"
-          />
-        </div>
-
-        <nav class="nav">
-          <ul class="nav__list flex">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Features</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Pricing</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Login</a>
-            </li>
-          </ul>
-        </nav>
+    <header class="hero flex">
+      <div class="logo">
+        <img
+          class="header__logo"
+          src="images/logo-bookmark.svg"
+          alt="Bookmark Logo"
+        />
       </div>
+
+      <nav class="nav">
+        <ul class="nav__list flex">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link login">Login</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section class="section-1">
+    <section class="hero section-1 flex">
       <div class="section-1__content">
         <h1 class="heading-1">A Simple Bookmark Manager</h1>
         <p class="description">
@@ -71,16 +69,19 @@
 
     <section class="section-2">
       <h2 class="heading-2">Features</h2>
-      <p class="description">
+      <p class="description feature_text">
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
       <div class="section-2__features">
-        <p class="feature">Simple Bookmarking</p>
-        <p class="feature">Speedy Searching</p>
-        <p class="feature">Easy Sharing</p>
-        <div class="feature-details__card">
+        <div class="features flex">
+          <p class="feature">Simple Bookmarking</p>
+          <p class="feature">Speedy Searching</p>
+          <p class="feature">Easy Sharing</p>
+        </div>
+        <hr class="line" />
+        <div class="feature-details__card hero flex">
           <div class="card-left">
             <img
               src="images/illustration-features-tab-1.svg"
@@ -94,7 +95,7 @@
               interface gives you complete control over how you manage your
               favourite sites.
             </p>
-            <button class="info-btn">More Info</button>
+            <button class="info-btn btn">More Info</button>
           </div>
         </div>
       </div>
