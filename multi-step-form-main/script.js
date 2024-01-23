@@ -11,8 +11,27 @@ document.addEventListener("DOMContentLoaded", function () {
   selectPlanError.style.display = "none";
   goBackButton.style.display = "none";
 
+  const toggleSwitch = document.getElementById("toggleSwitch");
+  const monthlyLabel = document.querySelector(".monthly-toggle");
+  const yearlyLabel = document.querySelector(".yearly-toggle");
+
   // Add a click event listener to the "Next Step" button
-  nextButton.addEventListener("click", function (event) {
+  nextButton.addEventListener("click", handleNextButtonClick);
+
+  // Add a click event listener to the pricing cards
+  const pricingCards = document.querySelectorAll(".pricing-card");
+  pricingCards.forEach((card) => {
+    card.addEventListener("click", handlePricingCardClick);
+  });
+
+  // Add a click event listener to the "Go Back" button
+  goBackButton.addEventListener("click", handleGoBackButtonClick);
+
+  // Toggle switch event listener
+  toggleSwitch.addEventListener("change", handleToggleSwitchChange);
+
+  // Function to handle "Next Step" button click
+  function handleNextButtonClick(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
 
@@ -69,35 +88,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Call a function to handle any additional logic or UI updates for the next step
     // Example: updateUIForNextStep();
-  });
+  }
 
-  // Add a click event listener to the pricing cards
-  const pricingCards = document.querySelectorAll(".pricing-card");
-  pricingCards.forEach((card) => {
-    card.addEventListener("click", function () {
-      // Remove the "active" class from all pricing cards
-      pricingCards.forEach((otherCard) => {
-        otherCard.classList.remove("active");
-      });
-
-      // Add the "active" class to the clicked pricing card
-      card.classList.add("active");
-
-      // Reset the border color of all pricing cards
-      pricingCards.forEach((card) => {
-        card.style.borderColor = "";
-      });
-
-      // Change the border color of the selected plan
-      updateBorderColor(card);
-
-      // Hide the "Please select a plan" error message
-      selectPlanError.style.display = "none";
+  // Function to handle pricing card click
+  function handlePricingCardClick() {
+    // Remove the "active" class from all pricing cards
+    pricingCards.forEach((otherCard) => {
+      otherCard.classList.remove("active");
     });
-  });
 
-  // Add a click event listener to the "Go Back" button
-  goBackButton.addEventListener("click", function (event) {
+    // Add the "active" class to the clicked pricing card
+    this.classList.add("active");
+
+    // Reset the border color of all pricing cards
+    pricingCards.forEach((card) => {
+      card.style.borderColor = "";
+    });
+
+    // Change the border color of the selected plan
+    updateBorderColor(this);
+
+    // Hide the "Please select a plan" error message
+    selectPlanError.style.display = "none";
+  }
+
+  // Function to handle "Go Back" button click
+  function handleGoBackButtonClick(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
 
@@ -117,7 +133,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Call a function to handle any additional logic or UI updates for the previous step
     // Example: updateUIForPreviousStep();
-  });
+  }
+
+  // Function to handle toggle switch change
+  function handleToggleSwitchChange() {
+    const monthlyPriceElements = document.querySelectorAll(
+      ".subscription-duration"
+    );
+    const yearlyPriceElements = document.querySelectorAll(
+      ".subscription-duration"
+    );
+
+    const yearlyBenefit = document.querySelectorAll(".yearly-benefit");
+
+    // Toggle the visibility of monthly and yearly prices
+    if (toggleSwitch.checked) {
+      // Switching to yearly
+      monthlyLabel.style.color = "var(--cool-grey)";
+      yearlyLabel.style.color = "var(--marine-blue)";
+      monthlyPriceElements.forEach((element) => {
+        element.textContent = "yr";
+      });
+
+      yearlyBenefit.forEach((element) => {
+        element.style.display = "block";
+      });
+    } else {
+      // Switching to monthly
+      monthlyLabel.style.color = "var(--marine-blue)";
+      yearlyLabel.style.color = "var(--cool-grey)";
+      yearlyPriceElements.forEach((element) => {
+        element.textContent = "mo";
+      });
+
+      yearlyBenefit.forEach((element) => {
+        element.style.display = "none";
+      });
+    }
+
+    updateTotalAmount();
+
+    // Call a function to update the total amount or perform any other necessary actions
+    // Example: updateTotalAmount();
+  }
 
   // Function to update the active step indicator in the sidebar (if applicable)
   function updateSidebarActiveStep(stepNumber) {
@@ -134,16 +192,58 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  const selectedPlan = document.querySelector(".pricing-card.active");
+
   // Function to update the border color based on the selected plan
   function updateBorderColor(selectedPlan) {
     selectedPlan.style.borderColor = "yellow"; // Replace with the desired color
   }
 
-  // Add the "active" class to the default selected plan (Arcade)
-  const defaultSelectedPlan = document.querySelector(".pricing-card.arcade");
-  if (defaultSelectedPlan) {
-    defaultSelectedPlan.classList.add("active");
-    // Change the border color of the default selected plan (Arcade) to its original color
-    updateBorderColor(defaultSelectedPlan);
+  // Function to update the total amount based on the selected plan and duration
+  function updateTotalAmount() {
+    const isYearly = toggleSwitch.checked;
+    const pricingCards = document.querySelectorAll(".pricing-card");
+
+    pricingCards.forEach((card) => {
+      const planNameElement = card.querySelector(".card-name");
+
+      const subscriptionPriceElement = card.querySelector(
+        ".subscription-price"
+      );
+
+      const subscriptionDurationElement = card.querySelector(
+        ".subscription-duration"
+      );
+
+      if (
+        planNameElement &&
+        subscriptionPriceElement &&
+        subscriptionDurationElement
+      ) {
+        let subscriptionPrice;
+
+        // Update subscription price based on the selected plan and duration
+
+        const planName = planNameElement.textContent.trim();
+
+        switch (planName) {
+          case "Arcade":
+            subscriptionPrice = isYearly ? 90 : 9;
+            break;
+          case "Advance":
+            subscriptionPrice = isYearly ? 120 : 12;
+            break;
+          case "Pro":
+            subscriptionPrice = isYearly ? 150 : 15;
+            break;
+          default:
+            subscriptionPrice = 0;
+        }
+
+        // Update the displayed subscription price
+        subscriptionPriceElement.textContent = subscriptionPrice;
+        subscriptionDurationElement.textContent = isYearly ? "yr" : "mo";
+      }
+    });
   }
 });
