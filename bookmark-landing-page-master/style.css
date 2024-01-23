@@ -251,7 +251,8 @@ body {
 .section-3__download {
   display: flex;
   justify-content: center;
-  /* gap: 20px; */
+  gap: 30px;
+  margin-bottom: 10rem;
 
   /* display: grid;
   grid-template-columns: repeat(3, 1fr); */
@@ -269,17 +270,18 @@ body {
   max-width: 350px;
   width: 100%;
   height: 100%;
-  flex: 1;
+
+  /* flesx: 1; */
 }
 .download-1,
 .download-2,
 .download-3 {
-  flex: 1; /* Equal distribution of space among all download items */
+  flex-basis: 31%; /* Equal distribution of space among all download items */
 }
 
 .download-1,
 .download-2 {
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
 }
 
 .download-2 {
@@ -289,4 +291,73 @@ body {
 
 .download-3 {
   margin-top: 6rem;
+}
+
+.download img {
+  margin-bottom: 20px;
+}
+
+.heading-4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.download_text {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.install-btn {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: var(--soft-blue);
+}
+
+.install-btn:hover {
+  background-color: var(--very-dark-blue);
+}
+
+.download-line {
+  margin: 20px 20px 20px;
+  border: 0;
+  border-bottom: 4px dotted hsl(229, 8%, 60%);
+}
+
+.section-4 {
+  padding: 40px 450px;
+}
+
+.section-4__faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  margin-top: 2rem;
+  /* max-width: 500px; */
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  /* margin-left: 300px; */
+  /* max-width: 600px; */
+  /* width: 100%; */
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.questions {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.answer {
+  color: var(--very-dark-blue);
+  /* width: 80%; */
+  /* text-align: center; */
 }
