@@ -53,16 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Hide the personal-info step (Step 1)
-    const personalInfoStep = document.getElementById("step-1");
-    personalInfoStep.style.display = "none";
+    const activeStep = document.querySelector(
+      ".steps-container > div:not([hidden])"
+    );
+    activeStep.hidden = true;
 
-    // Show the plan-details step (Step 2)
-    const planDetailsStep = document.getElementById("step-2");
-    planDetailsStep.hidden = false;
+    // Get the next step
+    const nextStepNumber = parseInt(activeStep.dataset.step, 10) + 1;
+    const nextStep = document.getElementById(`step-${nextStepNumber}`);
+    nextStep.hidden = false;
 
     // Update the active step indicator in the sidebar (if applicable)
-    updateSidebarActiveStep(2);
+    updateSidebarActiveStep(nextStepNumber);
 
     // Show the "Go Back" button
     goBackButton.style.display = "inline-block";
@@ -77,6 +79,59 @@ document.addEventListener("DOMContentLoaded", function () {
       // If a plan is selected, hide the error message
       selectPlanError.style.display = "none";
     }
+
+    const planName = selectedPlan
+      .querySelector(".card-name")
+      .textContent.trim();
+    const subscriptionPrice = parseInt(
+      selectedPlan.querySelector(".subscription-price").textContent,
+      10
+    );
+
+    // Get the selected add-ons
+    const selectedAddOns = document.querySelectorAll(".add-ons-card.selected");
+
+    // Calculate the total price including add-ons
+    let totalAmount = subscriptionPrice;
+
+    selectedAddOns.forEach((addOn) => {
+      const addOnPrice = parseInt(
+        addOn.querySelector(".addons-price").textContent,
+        10
+      );
+      totalAmount += addOnPrice;
+    });
+
+    // Display the selected plan in the summary section
+    const selectedPlanContainer = document.getElementById("selected-plan");
+    selectedPlanContainer.querySelector("h3").textContent = planName;
+    selectedPlanContainer.querySelector(
+      ".subscription-price"
+    ).textContent = `$${subscriptionPrice}`;
+
+    // Display the selected add-ons in the summary section
+    const selectedAddOnsContainer = document.querySelector(
+      ".selected-plan-container.flex"
+    );
+    selectedAddOnsContainer.querySelector("p").textContent = "Add-ons";
+
+    const totalAddOnsAmount = Array.from(
+      document.querySelectorAll(".add-ons-card.selected")
+    )
+      .map((addOn) =>
+        parseInt(addOn.querySelector(".addons-price").textContent, 10)
+      )
+      .reduce((total, addOnPrice) => total + addOnPrice, 0);
+
+    selectedAddOnsContainer.querySelector(".addons-price").textContent = `+$${
+      totalAmount - subscriptionPrice
+    }`;
+
+    // Display the total amount in the summary section
+    const totalContainer = document.getElementById("total");
+    totalContainer.querySelector(".total-price").textContent = `$${
+      totalAmount + totalAddOnsAmount
+    }`;
 
     // Reset the border color of all pricing cards
     document.querySelectorAll(".pricing-card").forEach((card) => {
@@ -117,19 +172,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // Prevent the default form submission behavior
     event.preventDefault();
 
-    // Hide the current step (Step 2)
-    const planDetailsStep = document.getElementById("step-2");
-    planDetailsStep.hidden = true;
+    const activeStep = document.querySelector(
+      ".steps-container > div:not([hidden])"
+    );
+    activeStep.hidden = true;
 
-    // Show the personal-info step (Step 1)
-    const personalInfoStep = document.getElementById("step-1");
-    personalInfoStep.style.display = "block";
+    // Get the previous step
+    const prevStepNumber = parseInt(activeStep.dataset.step, 10) - 1;
+    const prevStep = document.getElementById(`step-${prevStepNumber}`);
+    prevStep.hidden = false;
 
-    // Update the active step indicator in the sidebar (if applicable)
-    updateSidebarActiveStep(1);
+    // Update the active step indicator in the sidebar
+    updateSidebarActiveStep(prevStepNumber);
 
-    // Hide the "Go Back" button
-    goBackButton.style.display = "none";
+    // If going back from step-1, hide the "Go Back" button
+    if (prevStepNumber === 1) {
+      goBackButton.style.display = "none";
+    }
 
     // Call a function to handle any additional logic or UI updates for the previous step
     // Example: updateUIForPreviousStep();
@@ -177,6 +236,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // Example: updateTotalAmount();
   }
 
+  const addOnsCards = document.querySelectorAll(".add-ons-card");
+  addOnsCards.forEach((addOnCard) => {
+    addOnCard.addEventListener("click", handleAddOnCardClick);
+  });
+
+  function handleAddOnCardClick() {
+    // Toggle the "selected" class on the clicked add-ons card
+    this.classList.toggle("selected");
+
+    // Toggle the checked state of the associated checkbox
+    const checkbox = this.querySelector("input[type='checkbox']");
+    checkbox.checked = !checkbox.checked;
+
+    // Update the border color based on the selection status
+    const isSelected = this.classList.contains("selected");
+    this.style.borderColor = isSelected ? "yellow" : ""; // Replace with the desired color
+
+    // Update the checkbox color based on the selection status
+    checkbox.style.backgroundColor = isSelected ? "yellow" : ""; // Replace with the desired color
+
+    // Call a function to update any additional UI or logic for add-ons selection
+    // Example: updateUIForAddOnSelection();
+  }
+
   // Function to update the active step indicator in the sidebar (if applicable)
   function updateSidebarActiveStep(stepNumber) {
     const sidebarSteps = document.querySelectorAll(".step-number");
@@ -191,8 +274,6 @@ document.addEventListener("DOMContentLoaded", function () {
       currentSidebarStep.classList.add("active");
     }
   }
-
-  const selectedPlan = document.querySelector(".pricing-card.active");
 
   // Function to update the border color based on the selected plan
   function updateBorderColor(selectedPlan) {

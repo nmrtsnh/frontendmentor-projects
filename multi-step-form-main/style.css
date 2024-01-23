@@ -119,9 +119,9 @@ main {
   position: relative;
 }
 
-.step-active {
+/* .step-active {
   display: inline-block;
-}
+} */
 
 .primary-heading {
   margin-top: 20px;
@@ -335,6 +335,7 @@ input:checked + .slider:before {
 .add-ons {
   /* margin-bottom: 4rem; */
   min-height: 400px;
+  margin-top: 80px;
 }
 .add-ons-card {
   margin-top: 20px;
@@ -344,6 +345,11 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   padding: 12px;
+  cursor: pointer;
+}
+
+.add-ons-card:hover {
+  border-color: var(--purplish-blue);
 }
 
 .add-ons-card input {
@@ -366,6 +372,10 @@ input:checked + .slider:before {
   font-weight: 500;
 }
 
+.addons-price {
+  color: var(--purplish-blue);
+  font-weight: 500;
+}
 .summary {
   min-height: 350px;
 }
@@ -383,6 +393,12 @@ input:checked + .slider:before {
   background-color: var(--magnolia);
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .change-plan {
   background: none;
   border: none;
@@ -391,6 +407,14 @@ input:checked + .slider:before {
   font-weight: 500;
   text-decoration: underline;
   margin: auto;
+}
+
+.selected-price {
+  margin-right: 20px;
+}
+
+.total {
+  margin-top: 20px;
 }
 
 .thank-you {
