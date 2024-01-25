@@ -24,8 +24,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="overlay" id="overlay"></div>
+
     <header class="hero flex">
-      <div class="logo">
+      <div class="logo" id="logo">
         <img
           class="header__logo"
           src="images/logo-bookmark.svg"
@@ -33,8 +35,8 @@
         />
       </div>
 
-      <nav class="nav">
-        <ul class="nav__list flex">
+      <nav class="nav" id="nav">
+        <ul class="nav__list flex" id="nav-list">
           <li class="nav__item">
             <a href="#" class="nav__link">Features</a>
           </li>
@@ -46,6 +48,42 @@
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link login">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="open-btn" id="openBtn">
+        <img
+          class="menu-icon"
+          src="images/icon-hamburger.svg"
+          alt="Menu Icon"
+        />
+      </div>
+      <div class="close-btn" id="closeBtn">
+        <img class="close-icon" src="images/icon-close.svg" alt="Close Icon" />
+      </div>
+
+      <nav class="navbar-mobile" id="mobileNav">
+        <ul class="mobile-list">
+          <li class="">
+            <a class="" href="#">Features</a>
+          </li>
+          <li class="">
+            <a class="" href="#">Pricing</a>
+          </li>
+          <li class="">
+            <a class="" href="#">contact</a>
+          </li>
+          <li class="">
+            <a class="" href="#">login</a>
+          </li>
+        </ul>
+        <ul class="mobile__social-links">
+          <li class="">
+            <img class="mob-social__links" src="images/icon-facebook.svg" />
+          </li>
+          <li class="">
+            <img class="mob-social__links" src="images/icon-twitter.svg" />
           </li>
         </ul>
       </nav>
@@ -247,22 +285,25 @@
 
     <footer>
       <nav class="footer__details">
-        <img
-          src="images/logo-bookmark.svg"
-          alt="Bookmark Logo"
-          class="footer-logo"
-        />
+        <div>
+          <img
+            src="images/logo-bookmark.svg"
+            alt="Bookmark Logo"
+            class="footer-logo"
+          />
+        </div>
         <ul class="footer__list">
           <li class="footer__items">
-            <a href="#">Features</a>
+            <a class="footer__link" href="#">Features</a>
           </li>
           <li class="footer__items">
-            <a href="#">Pricing</a>
+            <a class="footer__link" href="#">Pricing</a>
           </li>
           <li class="footer__items">
-            <a href="#">Contact</a>
+            <a class="footer__link" href="#">Contact</a>
           </li>
         </ul>
+
         <ul class="social__links">
           <li>
             <img src="images/icon-facebook.svg" alt="Facebook Icon" />
@@ -285,6 +326,7 @@
     sites in no time at all. No need to trawl through all of your bookmarks.
     More Info Share your bookmarks Easily share your bookmarks and collections
     with others. Create a shareable link that you can send at the click of a
-    button. More Info  -->footer>
+    button. More Info  -->
+    <script src="script.js"></script>
   </body>
 </html>
