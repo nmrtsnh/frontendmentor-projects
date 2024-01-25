@@ -26,7 +26,7 @@
   <body>
     <div class="overlay" id="overlay"></div>
 
-    <header class="hero flex">
+    <header class="header">
       <div class="logo" id="logo">
         <img
           class="header__logo"
@@ -35,8 +35,8 @@
         />
       </div>
 
-      <nav class="nav" id="nav">
-        <ul class="nav__list flex" id="nav-list">
+      <nav class="navbar" id="nav">
+        <ul class="nav__list" id="nav-list">
           <li class="nav__item">
             <a href="#" class="nav__link">Features</a>
           </li>
@@ -51,7 +51,9 @@
           </li>
         </ul>
       </nav>
+    </header>
 
+    <div class="menu-btn">
       <div class="open-btn" id="openBtn">
         <img
           class="menu-icon"
@@ -62,32 +64,33 @@
       <div class="close-btn" id="closeBtn">
         <img class="close-icon" src="images/icon-close.svg" alt="Close Icon" />
       </div>
+    </div>
 
-      <nav class="navbar-mobile" id="mobileNav">
-        <ul class="mobile-list">
-          <li class="">
-            <a class="" href="#">Features</a>
-          </li>
-          <li class="">
-            <a class="" href="#">Pricing</a>
-          </li>
-          <li class="">
-            <a class="" href="#">contact</a>
-          </li>
-          <li class="">
-            <a class="" href="#">login</a>
-          </li>
-        </ul>
-        <ul class="mobile__social-links">
-          <li class="">
-            <img class="mob-social__links" src="images/icon-facebook.svg" />
-          </li>
-          <li class="">
-            <img class="mob-social__links" src="images/icon-twitter.svg" />
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar-mobile" id="mobileNav">
+      <ul class="mobile-list">
+        <li class="">
+          <a class="" href="#">Features</a>
+        </li>
+        <li class="">
+          <a class="" href="#">Pricing</a>
+        </li>
+        <li class="">
+          <a class="" href="#">contact</a>
+        </li>
+        <li class="">
+          <a class="" href="#">login</a>
+        </li>
+      </ul>
+      <ul class="mobile__social-links">
+        <li class="">
+          <img class="mob-social__links" src="images/icon-facebook.svg" />
+        </li>
+        <li class="">
+          <img class="mob-social__links" src="images/icon-twitter.svg" />
+        </li>
+      </ul>
+    </nav>
+
     <section class="hero section-1 flex">
       <div class="section-1__content">
         <h1 class="heading-1">A Simple Bookmark Manager</h1>
